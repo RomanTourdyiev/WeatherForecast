@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-24.2.1_8c5101060ef02359a2762e7cdb76b209972a91af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_1a3c5d8faeb28e6f0edb8b2bf3593ba8c1f1a803.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-24.2.1_c0e1dff86b3b3cecc9b61464e5e0e67e68b1c5ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.2.1_9ead642db89e410a831bd5a4c1493727786dbbbe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_bd4779cfd5cdb65c1d95ed149fe99766b0b87bab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-24.2.1_93934f89f87508179fd88051685290458faddf6b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-24.2.1_f1af9877e55d78eacd8d2f4aafe30de2c3a18a05.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.2.1_771d33ce09724f7ed5a2e32316e5757ff14c2b95.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.2.1_0dfa9aae72c085d9216a73d9b97cfa7d7a272b10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.2.1_aed05b12c54a1336ae2b0190c6c41a8af4f56980.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_2401cf2a8da90a8349f832a22a9ada246b0585aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-24.2.1_6c73065f9b890441cc2f321c4a1955386432835e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/libs/urlimageviewhelper-1.0.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="67125d743e0035a1b157ba8210c2abf1ff374e10">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/urlimageviewhelper-1.0.4_ba1693673c5473e517dec03504f5d73b3afd6ab8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.2.1_f1112bcf4d5a5b925ca08708cb00cb5f2d35dd79.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.2.1_9bc27c2b8bedd691e7ca8072ef89145552a3d621.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/preference-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="495666f06bb939a73f6cd6452c704eeda809283d">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/com.android.support-preference-v7-24.0.0_14faf516da6cbb27a065d4fe061962999f7e61a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_7dffac22333b10ebc4ad732932c08a57e425fd16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/support-annotations-24.2.1_e914e8803b9b9d648f51e56b797c37fbc2e6fab1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/libs/kenburnsview-1.0.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ce4e8bba9e026dd29f8110b2f6bb1fc4ecbdd9b1">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/kenburnsview-1.0.7_0af4b80fdac401fc4d67ad32a9b9019bc8759ee0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/internal_impl-24.2.1_1f7b96af98fb5cd70437f1f4fbb49d0fa9fd23ac.jar" />
+    </item>
+
+</items>

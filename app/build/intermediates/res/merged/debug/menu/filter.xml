@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/date"
+            android:checked="true"
+            android:title="@string/sort_by_date" />
+        <item
+            android:id="@+id/temp"
+            android:title="@string/sort_by_temp" />
+        <item
+            android:id="@+id/humidity"
+            android:title="@string/sort_by_humidity" />
+        <item
+            android:id="@+id/pressure"
+            android:title="@string/sort_by_pressure" />
+        <item
+            android:id="@+id/wind"
+            android:title="@string/sort_by_wind" />
+        <item
+            android:id="@+id/city"
+            android:title="@string/sort_by_city" />
+
+    </group>
+</menu>

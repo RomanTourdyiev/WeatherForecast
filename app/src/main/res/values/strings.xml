@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Weather Forecast</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="weather">Погода</string>
+    <string name="history">История</string>
+    <string name="settings">Настройки</string>
+    <string name="select_city">Выберите город</string>
+    <string name="city_no_selection">Город не выбран</string>
+    <string name="city_string">Населенный пункт</string>
+    <string name="start_input">Начните вводить название города</string>
+
+    <string name="no_connection">Отсутствует подключение к сети</string>
+
+    <string name="date">Дата</string>
+    <string name="temp">Температура</string>
+    <string name="humidity">Влажность: </string>
+    <string name="pressure">Давление: </string>
+    <string name="wind">Ветер:</string>
+    <string name="sun_up">Восход:</string>
+    <string name="sun_down">Закат:</string>
+    <string name="cels">°C</string>
+    <string name="mm">мм.рт.ст.</string>
+    <string name="ms">м/с</string>
+
+    <string name="day">день</string>
+    <string name="night">ночь</string>
+    <string name="morning">утро</string>
+    <string name="eve">вечер</string>
+
+    <string name="sort_by_city">Сортировать по городу</string>
+    <string name="sort_by_date">Сортировать по дате</string>
+    <string name="sort_by_temp">Сортировать по температуре</string>
+    <string name="sort_by_humidity">Сортировать по влажности</string>
+    <string name="sort_by_pressure">Сортировать по давлению</string>
+    <string name="sort_by_wind">Сортировать по скорости ветра</string>
+
+
+    <string name="today_json">http://api.openweathermap.org/data/2.5/weather</string>
+    <string name="week_json">http://api.openweathermap.org/data/2.5/forecast/daily</string>
+    <string name="city_id">692194</string>
+    <string name="units">metric</string>
+    <string name="lang">ru</string>
+    <string name="appid">c8eeac2237027c49d91352c22e2afef1</string>
+    <string name="icon_url">http://openweathermap.org/img/w/</string>
+
+</resources>

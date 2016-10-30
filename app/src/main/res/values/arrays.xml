@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cities">
+        <item>Не выбран</item>
+        <item>Винница</item>
+        <item>Днепр</item>
+        <item>Донецк</item>
+        <item>Житомир</item>
+        <item>Запорожье</item>
+        <item>Ивано-Франковск</item>
+        <item>Киев</item>
+        <item>Кропивницкий</item>
+        <item>Луганск</item>
+        <item>Луцк</item>
+        <item>Львов</item>
+        <item>Николаев</item>
+        <item>Одесса</item>
+        <item>Полтава</item>
+        <item>Ровно</item>
+        <item>Сумы</item>
+        <item>Севастополь</item>
+        <item>Симферополь</item>
+        <item>Тернополь</item>
+        <item>Ужгород</item>
+        <item>Харьков</item>
+        <item>Херсон</item>
+        <item>Хмельницкий</item>
+        <item>Черкассы</item>
+        <item>Чернигов</item>
+        <item>Черновцы</item>
+    </string-array>
+
+    <string-array name="id_s">
+        <item>null</item>
+        <item>689558</item>
+        <item>709930</item>
+        <item>709717</item>
+        <item>686967</item>
+        <item>687700</item>
+        <item>707471</item>
+        <item>703447</item>
+        <item>705812</item>
+        <item>702658</item>
+        <item>702569</item>
+        <item>702550</item>
+        <item>700569</item>
+        <item>698740</item>
+        <item>696643</item>
+        <item>695594</item>
+        <item>692194</item>
+        <item>694423</item>
+        <item>693805</item>
+        <item>691650</item>
+        <item>690548</item>
+        <item>706483</item>
+        <item>706448</item>
+        <item>706369</item>
+        <item>710791</item>
+        <item>710735</item>
+        <item>710719</item>
+    </string-array>
+
+</resources>

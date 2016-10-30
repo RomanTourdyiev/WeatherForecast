@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/menu/filter.xml",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/menu/filter.xml"
+    },
+    {
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/menu/activity_main_drawer.xml",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/menu/activity_main_drawer.xml"
+    }
+]
