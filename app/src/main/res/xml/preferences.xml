@@ -1,30 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content">
-
-    <PreferenceCategory android:title="@string/select_city">
-
-        <ListPreference
-            android:defaultValue="0"
-            android:entries="@array/cities"
-            android:entryValues="@array/id_s"
-            android:key="listCity"
-            android:summary="@string/city_string"
-            android:title="@string/select_city" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory android:title="@string/select_city">
-
-        <forecast.weather.tink.co.weatherforecast.helpers.DialogPreferenceNew
-            android:key="quality"
-            android:title="Recording quality"
-            android:summary="Define recording quality"
-            android:dialogTitle="Recording quality"
-            android:positiveButtonText="@android:string/ok"
-            android:negativeButtonText="@android:string/cancel" />
-
-    </PreferenceCategory>
-
-</PreferenceScreen>
+<?xml version="1.0" encoding="utf-8"?><PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"    android:layout_width="fill_parent"    android:layout_height="wrap_content">    <PreferenceCategory android:title="@string/select_city">        <ListPreference            android:defaultValue="0"            android:entries="@array/cities"            android:entryValues="@array/id_s"            android:key="listCity"            android:summary="@string/city_string"            android:title="@string/select_city" />    </PreferenceCategory>    <PreferenceCategory android:title="@string/select_city">        <forecast.weather.tink.co.weatherforecast.helpers.DialogPreferenceNew            android:key="quality"            android:title="Recording quality"            android:summary="Define recording quality"            android:dialogTitle="Recording quality"            android:positiveButtonText="@android:string/ok"            android:negativeButtonText="@android:string/cancel" />    </PreferenceCategory></PreferenceScreen>
