@@ -1,7 +1,7 @@
 package forecast.weather.tink.co.weatherforecast.helpers;
 
 import android.content.Context;
-import android.support.v7.preference.DialogPreference;
+import android.preference.DialogPreference;
 import android.util.AttributeSet;
 import android.view.View;
 
