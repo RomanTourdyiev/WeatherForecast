@@ -78,7 +78,6 @@
     <color name="background_material_dark">@color/material_grey_850</color>
     <color name="background_material_light">@color/material_grey_50</color>
     <color name="black">#000000</color>
-    <color name="blue">#880000ff</color>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
     <color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -108,7 +107,7 @@
     <color name="dim_foreground_material_light">#ff323232</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
-    <color name="grey">#e8eaf7</color>
+    <color name="grey">#10ffffff</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
@@ -133,7 +132,6 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <color name="red">#88ff0000</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
@@ -385,6 +383,7 @@
     <declare-styleable name="PreferenceGroup"><attr format="boolean" name="orderingFromXml"/><attr name="android:orderingFromXml"/></declare-styleable>
     <declare-styleable name="PreferenceImageView"><attr format="dimension" name="maxWidth"/><attr name="android:maxWidth"/><attr format="dimension" name="maxHeight"/><attr name="android:maxHeight"/></declare-styleable>
     <declare-styleable name="PreferenceTheme"><attr format="reference" name="preferenceTheme"/><attr format="reference" name="preferenceScreenStyle"/><attr format="reference" name="preferenceActivityStyle"/><attr format="reference" name="preferenceFragmentStyle"/><attr format="reference" name="preferenceFragmentCompatStyle"/><attr format="reference" name="preferenceCategoryStyle"/><attr format="reference" name="preferenceStyle"/><attr format="reference" name="preferenceInformationStyle"/><attr format="reference" name="checkBoxPreferenceStyle"/><attr format="reference" name="yesNoPreferenceStyle"/><attr format="reference" name="dialogPreferenceStyle"/><attr format="reference" name="editTextPreferenceStyle"/><attr format="reference" name="ringtonePreferenceStyle"/><attr format="reference" name="dropdownPreferenceStyle"/><attr format="reference" name="preferenceLayoutChild"/><attr format="reference" name="preferencePanelStyle"/><attr format="reference" name="preferenceHeaderPanelStyle"/><attr format="reference" name="preferenceListStyle"/><attr format="reference" name="preferenceFragmentListStyle"/><attr format="dimension" name="preferenceFragmentPaddingSide"/><attr format="reference" name="switchPreferenceStyle"/><attr format="reference" name="switchPreferenceCompatStyle"/><attr format="reference" name="seekBarPreferenceStyle"/></declare-styleable>
+    <declare-styleable name="RangeBar"><attr format="float" name="tickStart"/><attr format="float" name="tickEnd"/><attr format="float" name="tickInterval"/><attr format="dimension" name="tickHeight"/><attr format="color" name="tickColor"/><attr format="dimension" name="barWeight"/><attr format="reference|color" name="rangeBarColor"/><attr format="reference|color" name="textColor"/><attr format="reference|color" name="pinColor"/><attr format="dimension" name="selectorSize"/><attr format="dimension" name="pinPadding"/><attr format="dimension" name="pinMinFont"/><attr format="dimension" name="pinMaxFont"/><attr format="dimension" name="rangeBarPaddingBottom"/><attr format="reference|color" name="selectorColor"/><attr format="boolean" name="rangeBar"/><attr format="boolean" name="temporaryPins"/><attr format="dimension" name="connectingLineWeight"/><attr format="reference|color" name="connectingLineColor"/><attr format="dimension" name="pinRadius"/></declare-styleable>
     <declare-styleable name="RecyclerView"><attr format="string" name="layoutManager"/><attr name="android:orientation"/><attr name="android:descendantFocusability"/><attr format="integer" name="spanCount"/><attr format="boolean" name="reverseLayout"/><attr format="boolean" name="stackFromEnd"/></declare-styleable>
     <declare-styleable name="ScrimInsetsFrameLayout"><attr format="color|reference" name="insetForeground"/></declare-styleable>
     <declare-styleable name="ScrollingViewBehavior_Layout"><attr format="dimension" name="behavior_overlapTop"/></declare-styleable>
@@ -534,6 +533,12 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="alert_margin_left">-12dp</dimen>
+    <dimen name="alert_size">10dp</dimen>
+    <dimen name="alert_text">8dp</dimen>
+    <dimen name="bar_weight">3dp</dimen>
+    <dimen name="category_text_height">14sp</dimen>
+    <dimen name="connecting_line_weight">2dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_navigation_active_item_max_width">168dp</dimen>
     <dimen name="design_bottom_navigation_active_text_size">14sp</dimen>
@@ -571,6 +576,7 @@
     <dimen name="design_tab_text_size_2line">12sp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <dimen name="dropdown_height">54dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
@@ -585,6 +591,10 @@
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
     <dimen name="padding_cell">4dp</dimen>
+    <dimen name="preference_text_height">22sp</dimen>
+    <dimen name="rangebar_height">72dp</dimen>
+    <dimen name="selector_size">6dp</dimen>
+    <dimen name="spinner_progress_height">28dp</dimen>
     <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
     <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
     <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
@@ -609,7 +619,22 @@
     <integer name="bottom_sheet_slide_duration">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="design_snackbar_text_max_lines">2</integer>
+    <integer name="humid_interval">5</integer>
+    <integer name="humid_max">100</integer>
+    <integer name="humid_min">0</integer>
+    <integer name="press_interval">10</integer>
+    <integer name="press_max">1090</integer>
+    <integer name="press_min">850</integer>
+    <integer name="refresh_interval">1</integer>
+    <integer name="refresh_max">24</integer>
+    <integer name="refresh_min">1</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <integer name="temp_interval">1</integer>
+    <integer name="temp_max">70</integer>
+    <integer name="temp_min">-70</integer>
+    <integer name="wind_interval">1</integer>
+    <integer name="wind_max">33</integer>
+    <integer name="wind_min">0</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -641,10 +666,20 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="alert_descr">Предупреждать если параметры выходят за рамки выбранного диапазона</string>
+    <string name="alert_dialog_message">Параметр выходит за рамки выбранного вами интервала!</string>
+    <string name="alert_dialog_message_humid">Влажность воздуха выходит за рамки выбранного вами интервала!</string>
+    <string name="alert_dialog_message_press">Атмосферное давление выходит за рамки выбранного вами интервала!</string>
+    <string name="alert_dialog_message_temp">Температура воздуха выходит за рамки выбранного вами интервала!</string>
+    <string name="alert_dialog_message_wind">Скорость ветра выходит за рамки выбранного вами интервала!</string>
+    <string name="alert_dialog_title">Предупреждение</string>
+    <string name="alerts">Следить</string>
+    <string name="all_cities">Все города</string>
     <string name="app_name">Weather Forecast</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="appid">c8eeac2237027c49d91352c22e2afef1</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="caution">Неблагоприятные погодные условия</string>
     <string name="cels">°C</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="city_id">692194</string>
@@ -653,18 +688,32 @@
     <string name="date">Дата</string>
     <string name="day">день</string>
     <string name="eve">вечер</string>
+    <string name="exp_imp_settings">Экспорт/импорт настроек</string>
+    <string name="export_done">Настройки эскпортированы в папку:\n\"внутренняя_память/WeatherForecast/weatherforecastprefs.xml\"</string>
+    <string name="export_settings">Экспорт настроек</string>
+    <string name="from">от</string>
     <string name="history">История</string>
+    <string name="hour">ч.</string>
     <string name="humidity">Влажность: </string>
     <string name="icon_url">http://openweathermap.org/img/w/</string>
+    <string name="import_done">Настройки импортированы</string>
+    <string name="import_settings">Импорт настроек</string>
     <string name="lang">ru</string>
-    <string name="mm">мм.рт.ст.</string>
+    <string name="min">мин.</string>
+    <string name="mm">мбар</string>
     <string name="morning">утро</string>
     <string name="ms">м/с</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="night">ночь</string>
+    <string name="night_mode">Ночной режим</string>
+    <string name="night_mode_descr">Переключать тему на ночную?</string>
     <string name="no_connection">Отсутствует подключение к сети</string>
+    <string name="no_sort_by_city">Без сортировки по городу</string>
     <string name="pressure">Давление: </string>
+    <string name="refresh_criteria">раз в</string>
+    <string name="refresh_descr">Обновлять погоду</string>
+    <string name="refresh_rate">Период обновления</string>
     <string name="search_menu_title">Search</string>
     <string name="select_city">Выберите город</string>
     <string name="settings">Настройки</string>
@@ -678,11 +727,15 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="sun_down">Закат:</string>
     <string name="sun_up">Восход:</string>
-    <string name="temp">Температура</string>
+    <string name="temp">Температура: </string>
+    <string name="to">до</string>
+    <string name="today">Сегодня</string>
     <string name="today_json">http://api.openweathermap.org/data/2.5/weather</string>
     <string name="units">metric</string>
     <string name="v7_preference_off">OFF</string>
     <string name="v7_preference_on">ON</string>
+    <string name="warning">Вы не выбрали город!</string>
+    <string name="warning_alerts">Необходимо выбрать не менее одного параметра для отслеживания</string>
     <string name="weather">Погода</string>
     <string name="week_json">http://api.openweathermap.org/data/2.5/forecast/daily</string>
     <string name="wind">Ветер:</string>
@@ -694,21 +747,35 @@
         <item name="android:windowEnterAnimation">@anim/design_bottom_sheet_slide_in</item>
         <item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>
     </style>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppPreferenceFragmentCompatStyle" parent="@style/PreferenceFragment">
+        <item name="android:layout">@layout/layout_prefs_screen</item>
+    </style>
+    <style name="AppPreferenceTheme" parent="@style/PreferenceThemeOverlay">
+        <item name="preferenceFragmentCompatStyle">@style/AppPreferenceFragmentCompatStyle</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
-        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="preferenceTheme">@style/AppPreferenceTheme</item>
         <item name="android:listSeparatorTextViewStyle">@style/ListSeparatorTextView</item>
+        
+        
+        
+        
     </style>
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
         <item name="listLayout">@layout/abc_select_dialog_material</item>

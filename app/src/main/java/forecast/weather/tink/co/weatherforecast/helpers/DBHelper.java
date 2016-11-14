@@ -20,8 +20,9 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table if not exists city_692194 ("
+        db.execSQL("create table if not exists city_table ("
                 + "_id integer primary key autoincrement,"
+                + "city text,"
                 + "date long,"
                 + "temp double,"
                 + "temp_min double,"

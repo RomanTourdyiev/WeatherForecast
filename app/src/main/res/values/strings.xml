@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Weather Forecast</string>
 
+    <string name="today">Сегодня</string>
+    <string name="caution">Неблагоприятные погодные условия</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
@@ -11,19 +14,40 @@
     <string name="city_no_selection">Город не выбран</string>
     <string name="city_string">Населенный пункт</string>
     <string name="start_input">Начните вводить название города</string>
+    <string name="warning">Вы не выбрали город!</string>
+    <string name="warning_alerts">Необходимо выбрать не менее одного параметра для отслеживания</string>
+    <string name="all_cities">Все города</string>
+    <string name="alerts">Следить</string>
+    <string name="alert_descr">Предупреждать если параметры выходят за рамки выбранного диапазона</string>
+    <string name="refresh_rate">Период обновления</string>
+    <string name="refresh_descr">Обновлять погоду</string>
+    <string name="refresh_criteria">раз в</string>
+    <string name="min">мин.</string>
+    <string name="hour">ч.</string>
+
+    <string name="alert_dialog_title">Предупреждение</string>
+    <string name="alert_dialog_message">Параметр выходит за рамки выбранного вами интервала!</string>
+    <string name="alert_dialog_message_temp">Температура воздуха выходит за рамки выбранного вами интервала!</string>
+    <string name="alert_dialog_message_press">Атмосферное давление выходит за рамки выбранного вами интервала!</string>
+    <string name="alert_dialog_message_humid">Влажность воздуха выходит за рамки выбранного вами интервала!</string>
+    <string name="alert_dialog_message_wind">Скорость ветра выходит за рамки выбранного вами интервала!</string>
 
     <string name="no_connection">Отсутствует подключение к сети</string>
+    <string name="export_done">Настройки эскпортированы в папку:\n\"внутренняя_память/WeatherForecast/weatherforecastprefs.xml\"</string>
+    <string name="import_done">Настройки импортированы</string>
 
     <string name="date">Дата</string>
-    <string name="temp">Температура</string>
+    <string name="temp">Температура: </string>
     <string name="humidity">Влажность: </string>
     <string name="pressure">Давление: </string>
     <string name="wind">Ветер:</string>
     <string name="sun_up">Восход:</string>
     <string name="sun_down">Закат:</string>
     <string name="cels">°C</string>
-    <string name="mm">мм.рт.ст.</string>
+    <string name="mm">мбар</string>
     <string name="ms">м/с</string>
+    <string name="from">от</string>
+    <string name="to">до</string>
 
     <string name="day">день</string>
     <string name="night">ночь</string>
@@ -31,11 +55,18 @@
     <string name="eve">вечер</string>
 
     <string name="sort_by_city">Сортировать по городу</string>
+    <string name="no_sort_by_city">Без сортировки по городу</string>
     <string name="sort_by_date">Сортировать по дате</string>
     <string name="sort_by_temp">Сортировать по температуре</string>
     <string name="sort_by_humidity">Сортировать по влажности</string>
     <string name="sort_by_pressure">Сортировать по давлению</string>
     <string name="sort_by_wind">Сортировать по скорости ветра</string>
+
+    <string name="exp_imp_settings">Экспорт/импорт настроек</string>
+    <string name="export_settings">Экспорт настроек</string>
+    <string name="import_settings">Импорт настроек</string>
+    <string name="night_mode">Ночной режим</string>
+    <string name="night_mode_descr">Переключать тему на ночную?</string>
 
 
     <string name="today_json">http://api.openweathermap.org/data/2.5/weather</string>
@@ -45,5 +76,25 @@
     <string name="lang">ru</string>
     <string name="appid">c8eeac2237027c49d91352c22e2afef1</string>
     <string name="icon_url">http://openweathermap.org/img/w/</string>
+    
+    <integer name="temp_min">-70</integer>
+    <integer name="temp_max">70</integer>
+    <integer name="temp_interval">1</integer>
+
+    <integer name="press_min">850</integer>
+    <integer name="press_max">1090</integer>
+    <integer name="press_interval">10</integer>
+
+    <integer name="humid_min">0</integer>
+    <integer name="humid_max">100</integer>
+    <integer name="humid_interval">5</integer>
+
+    <integer name="wind_min">0</integer>
+    <integer name="wind_max">33</integer>
+    <integer name="wind_interval">1</integer>
+
+    <integer name="refresh_min">1</integer>
+    <integer name="refresh_max">24</integer>
+    <integer name="refresh_interval">1</integer>
 
 </resources>

@@ -1,223 +1,39 @@
 [
     {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_grey600_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_grey600_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_grey600_48dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_grey600_48dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_black_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_black_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_snowy_rainy_black_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_snowy_rainy_black_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_black_48dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_black_48dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_down_white_36dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_down_white_36dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_grey600_48dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_grey600_48dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_today_black_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_today_black_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_temperature_celsius_grey600_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_temperature_celsius_grey600_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_down_black_36dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_down_black_36dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_down_grey600_48dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_down_grey600_48dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_black_48dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_black_48dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_temperature_celsius_black_48dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_temperature_celsius_black_48dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_black_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_black_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_white_36dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_white_36dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_white_48dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_white_48dp.png"
-    },
-    {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_down_grey600_18dp.png",
         "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_down_grey600_18dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_down_grey600_36dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_down_grey600_36dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_settings_black_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_settings_black_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_temperature_celsius_white_36dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_temperature_celsius_white_36dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_temperature_celsius_black_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_temperature_celsius_black_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_temperature_celsius_grey600_36dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_temperature_celsius_grey600_36dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_white_18dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_white_18dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_partlycloudy_black_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_partlycloudy_black_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_temperature_celsius_white_18dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_temperature_celsius_white_18dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_grey600_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_grey600_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_down_black_18dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_down_black_18dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_down_white_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_down_white_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_down_white_48dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_down_white_48dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_black_18dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_black_18dp.png"
     },
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_altimeter_black_24dp.png",
         "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_altimeter_black_24dp.png"
     },
     {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_grey600_36dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_grey600_36dp.png"
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_grey600_48dp.png",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_grey600_48dp.png"
     },
     {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_down_black_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_down_black_24dp.png"
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_settings_black_24dp.png",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_settings_black_24dp.png"
     },
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_water_percent_black_24dp.png",
         "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_water_percent_black_24dp.png"
     },
     {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_black_36dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_black_36dp.png"
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_today_black_24dp.png",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_today_black_24dp.png"
     },
     {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_temperature_celsius_black_36dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_temperature_celsius_black_36dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_black_18dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_black_18dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_white_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_white_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_temperature_celsius_grey600_18dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_temperature_celsius_grey600_18dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_white_36dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_white_36dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_grey600_18dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_grey600_18dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_black_36dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_black_36dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_white_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_white_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_white_48dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_white_48dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_down_black_48dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_down_black_48dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_temperature_celsius_grey600_48dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_temperature_celsius_grey600_48dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_white_18dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_white_18dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_temperature_celsius_white_48dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_temperature_celsius_white_48dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_down_grey600_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_down_grey600_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_temperature_celsius_white_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_temperature_celsius_white_24dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_grey600_18dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_grey600_18dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_temperature_celsius_black_18dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_temperature_celsius_black_18dp.png"
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_partlycloudy_black_24dp.png",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_partlycloudy_black_24dp.png"
     },
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_history_black_24dp.png",
         "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_history_black_24dp.png"
     },
     {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_down_white_18dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_down_white_18dp.png"
-    },
-    {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_timer_sand_grey600_36dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_timer_sand_grey600_36dp.png"
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_sunset_up_grey600_18dp.png",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-mdpi/ic_weather_sunset_up_grey600_18dp.png"
     },
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_weather_windy_black_24dp.png",

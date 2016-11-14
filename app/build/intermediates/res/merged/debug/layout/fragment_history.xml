@@ -10,8 +10,8 @@
 
     <ProgressBar
         android:id="@+id/progress"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="@dimen/dropdown_height"
+        android:layout_height="@dimen/dropdown_height"
         android:layout_centerInParent="true"
         android:visibility="invisible"/>
 

@@ -48,12 +48,12 @@
         "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_screen_content_include.xml"
     },
     {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_layout_snackbar_include.xml"
-    },
-    {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/nav_header_main.xml",
         "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_layout_snackbar_include.xml"
     },
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
@@ -76,6 +76,10 @@
         "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_screen_toolbar.xml"
     },
     {
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/simple_spinner_item.xml",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/layout/simple_spinner_item.xml"
+    },
+    {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
         "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_item_subheader.xml"
     },
@@ -86,6 +90,10 @@
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
         "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/layout_divider.xml",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/layout/layout_divider.xml"
     },
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
@@ -110,6 +118,10 @@
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
         "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/layout_refresh_rate.xml",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/layout/layout_refresh_rate.xml"
     },
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
@@ -180,6 +192,10 @@
         "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/layout_rangebar.xml",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/layout/layout_rangebar.xml"
+    },
+    {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
         "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_navigation_menu_item.xml"
     },
@@ -220,6 +236,10 @@
         "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/select_dialog_item_material.xml"
     },
     {
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/layout_prefs_screen.xml",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/layout/layout_prefs_screen.xml"
+    },
+    {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
         "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/res/layout/design_menu_item_action_area.xml"
     },
@@ -246,6 +266,10 @@
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
         "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/simple_spinner_dropdown_item.xml",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/layout/simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",

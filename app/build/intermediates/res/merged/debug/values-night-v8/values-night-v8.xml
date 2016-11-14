@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="blue">#9999ff</color>
+    <color name="paper">#747446</color>
+    <color name="paper_stroke">#60603a</color>
+    <color name="red">#ff7979</color>
     <style name="Theme.AppCompat.DayNight" parent="Theme.AppCompat"/>
     <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="Theme.AppCompat"/>
     <style name="Theme.AppCompat.DayNight.Dialog" parent="Theme.AppCompat.Dialog"/>

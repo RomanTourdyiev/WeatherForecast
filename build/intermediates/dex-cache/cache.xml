@@ -57,6 +57,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/pre-dexed/debug/commons-io-2.4_db9d9c7f5dc9abc44c05f9a56b43532b2a4af315.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"

@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import forecast.weather.tink.co.weatherforecast.R;
+import forecast.weather.tink.co.weatherforecast.activities.MainActivity;
 import forecast.weather.tink.co.weatherforecast.adapters.ListViewAdapter;
 import forecast.weather.tink.co.weatherforecast.helpers.DBHelper;
 import forecast.weather.tink.co.weatherforecast.helpers.JSONfunctions;
@@ -41,8 +42,6 @@ public class WeekFragment extends android.support.v4.app.Fragment implements Swi
     JSONArray jsonarray;
     ListViewAdapter adapter;
     ArrayList<HashMap<String, String>> arraylist;
-
-    DBHelper dbHelper;
 
     SharedPreferences prefs;
 
@@ -67,6 +66,8 @@ public class WeekFragment extends android.support.v4.app.Fragment implements Swi
             }
         });
 
+//        MainActivity.spinnerCity.setVisibility(View.GONE);
+
         return rootView;
     }
 
@@ -85,8 +86,8 @@ public class WeekFragment extends android.support.v4.app.Fragment implements Swi
         if (NetworkCheck.isNetworkAvailable(getActivity())) {
             no_connection.setVisibility(View.GONE);
             week_listView.setVisibility(View.VISIBLE);
-            if (!prefs.getString("listCity", "").equals("null")) {
-                new FetchWeekWeather().execute(prefs.getString("listCity", ""));
+            if (prefs.getString("city", "").length()!=0) {
+                new FetchWeekWeather().execute(prefs.getString("city", ""));
             }
         } else {
             no_connection.setVisibility(View.VISIBLE);
@@ -104,7 +105,6 @@ public class WeekFragment extends android.support.v4.app.Fragment implements Swi
 
         @Override
         protected Void doInBackground(String... params) {
-            dbHelper = new DBHelper(getActivity());
             jsonobject = JSONfunctions.getJSONfromURL(getResources().getString(R.string.week_json) +
                     "?id=" + params[0] +
                     "&units=" + getResources().getString(R.string.units) +
@@ -135,21 +135,6 @@ public class WeekFragment extends android.support.v4.app.Fragment implements Swi
                         week.put("pressure", jsonobjectday.getString("pressure"));
                         week.put("wind", jsonobjectday.getString("speed"));
 
-                        ContentValues cv = new ContentValues();
-                        SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-                        cv.put("date", jsonobjectday.getLong("dt"));
-                        cv.put("temp", jsonobjectday.getJSONObject("temp").getDouble("day"));
-                        cv.put("temp_min", jsonobjectday.getJSONObject("temp").getDouble("min"));
-                        cv.put("temp_max", jsonobjectday.getJSONObject("temp").getDouble("max"));
-                        cv.put("icon", jsonobjectday.getJSONArray("weather").getJSONObject(0).getString("icon"));
-                        cv.put("forecast", jsonobjectday.getJSONArray("weather").getJSONObject(0).getString("description"));
-                        cv.put("humidity", jsonobjectday.getInt("humidity"));
-                        cv.put("pressure", jsonobjectday.getDouble("pressure"));
-                        cv.put("wind", jsonobjectday.getDouble("speed"));
-
-                        db.insert("city_692194", null, cv);
-
                         arraylist.add(week);
                     }
                 } catch (JSONException e) {
@@ -161,7 +146,7 @@ public class WeekFragment extends android.support.v4.app.Fragment implements Swi
 
         @Override
         protected void onPostExecute(Void args) {
-            adapter = new ListViewAdapter(getActivity(), arraylist);
+            adapter = new ListViewAdapter(getActivity(), arraylist, false);
             week_listView.setAdapter(adapter);
             swipeRefreshLayout.setRefreshing(false);
 

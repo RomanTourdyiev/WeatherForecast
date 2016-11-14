@@ -32,4 +32,5 @@ dependencies {
     compile files('libs/kenburnsview-1.0.7.jar')
     compile 'com.android.support:support-v4:24.0.0'
     compile files('libs/urlimageviewhelper-1.0.4.jar')
+    compile 'commons-io:commons-io:+'
 }

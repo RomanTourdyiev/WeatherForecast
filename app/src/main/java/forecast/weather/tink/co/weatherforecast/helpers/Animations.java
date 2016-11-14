@@ -13,11 +13,19 @@ public class Animations {
 
     public static Animation fade_in() {
         Animation fadeIn = new AlphaAnimation(0, 1);
-        fadeIn.setInterpolator(new DecelerateInterpolator()); //add this
+        fadeIn.setInterpolator(new DecelerateInterpolator());
         fadeIn.setDuration(1000);
-
-        AnimationSet animation = new AnimationSet(false); //change to false
+        AnimationSet animation = new AnimationSet(false);
         animation.addAnimation(fadeIn);
+        return animation;
+    }
+
+    public static Animation blink(){
+        Animation animation = new AlphaAnimation(0.0f, 1.0f);
+        animation.setDuration(500);
+        animation.setStartOffset(20);
+        animation.setRepeatMode(Animation.REVERSE);
+        animation.setRepeatCount(Animation.INFINITE);
         return animation;
     }
 

@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AutoCompleteTextView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/autoComplete"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="@string/start_input" />
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/city_string"
+        android:textStyle="bold"
+        android:textSize="@dimen/category_text_height"
+        android:textColor="@color/colorAccent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/preference_text_height"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="@string/start_input" />
+</LinearLayout>

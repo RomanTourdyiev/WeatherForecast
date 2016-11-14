@@ -7,8 +7,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
-    <color name="grey">#e8eaf7</color>
+    <color name="grey">#10ffffff</color>
     <color name="white_tr">#88ffffff</color>
-    <color name="red">#88ff0000</color>
-    <color name="blue">#880000ff</color>
 </resources>
