@@ -31,10 +31,12 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
@@ -43,6 +45,7 @@ import java.io.OutputStream;
 
 import org.apache.commons.io.FilenameUtils;
 
+import java.io.OutputStreamWriter;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Map;
@@ -230,8 +233,9 @@ public class PreferencesFragment extends PreferenceFragmentCompat implements Sha
             rangebar_refresh.setRangePinsByValue(1, Float.parseFloat(pref_refresh_range));
             refresh_rate.setText(pref_refresh_range);
         } else {
-            refresh_rate.setText(String.valueOf(getResources().getInteger(R.integer.refresh_max)));
-            sharedPreferences.edit().putString("refresh_range", String.valueOf(getResources().getInteger(R.integer.refresh_max))).commit();
+            refresh_rate.setText(String.valueOf(getResources().getInteger(R.integer.refresh_min)));
+            rangebar_refresh.setRangePinsByValue(1, 1);
+            sharedPreferences.edit().putString("refresh_range", String.valueOf(getResources().getInteger(R.integer.refresh_min))).commit();
         }
 
 
@@ -243,8 +247,6 @@ public class PreferencesFragment extends PreferenceFragmentCompat implements Sha
             public void onRangeChangeListener(RangeBar rangeBar, int leftPinIndex, int rightPinIndex, String leftPinValue, String rightPinValue) {
                 refresh_rate.setText(rightPinValue);
                 sharedPreferences.edit().putString("refresh_range", rightPinValue).commit();
-                ((MainActivity)getActivity()).stop_notification_service();
-                ((MainActivity)getActivity()).start_notification_service();
             }
         });
     }
@@ -504,6 +506,7 @@ public class PreferencesFragment extends PreferenceFragmentCompat implements Sha
 
             editor.commit();
             result = true;
+            reload_prefs_screen("import_prefs");
 
         } catch (FileNotFoundException fnfexception) {
             fnfexception.printStackTrace();
@@ -524,7 +527,6 @@ public class PreferencesFragment extends PreferenceFragmentCompat implements Sha
             }
         }
 
-        reload_prefs_screen("import_prefs");
 
         return result;
     }
@@ -598,8 +600,7 @@ public class PreferencesFragment extends PreferenceFragmentCompat implements Sha
                     return false;
                 }
             });
-        }
-        else  if (preference instanceof Preference) {
+        } else if (preference instanceof Preference) {
             preference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
@@ -609,6 +610,7 @@ public class PreferencesFragment extends PreferenceFragmentCompat implements Sha
                         expDir.mkdirs();
                         File file = new File(expDir, EXPORT_NAME);
                         if (file.exists()) file.delete();
+
                         exportPreferences(file);
                         snack_bar(getResources().getString(R.string.export_done));
 

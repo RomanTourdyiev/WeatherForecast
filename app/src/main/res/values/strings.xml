@@ -2,7 +2,8 @@
     <string name="app_name">Weather Forecast</string>
 
     <string name="today">Сегодня</string>
-    <string name="caution">Неблагоприятные погодные условия</string>
+    <string name="week">На этой неделе</string>
+    <string name="caution">Ожидаются неблагоприятные погодные условия</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -33,7 +34,7 @@
     <string name="alert_dialog_message_wind">Скорость ветра выходит за рамки выбранного вами интервала!</string>
 
     <string name="no_connection">Отсутствует подключение к сети</string>
-    <string name="export_done">Настройки эскпортированы в папку:\n\"внутренняя_память/WeatherForecast/weatherforecastprefs.xml\"</string>
+    <string name="export_done">Настройки эскпортированы в файл:\n\"внутренняя_память/WeatherForecast/weatherforecastprefs.xml\"</string>
     <string name="import_done">Настройки импортированы</string>
 
     <string name="date">Дата</string>
@@ -96,5 +97,21 @@
     <integer name="refresh_min">1</integer>
     <integer name="refresh_max">24</integer>
     <integer name="refresh_interval">1</integer>
+
+
+    <string name="temp_min">-70</string>
+    <string name="temp_max">70</string>
+
+    <string name="press_min">850</string>
+    <string name="press_max">1090</string>
+
+    <string name="humid_min">0</string>
+    <string name="humid_max">100</string>
+
+    <string name="wind_min">0</string>
+    <string name="wind_max">33</string>
+
+    <string name="refresh_min">1</string>
+    <string name="refresh_max">24</string>
 
 </resources>

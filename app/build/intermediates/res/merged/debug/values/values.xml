@@ -679,7 +679,7 @@
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
     <string name="appid">c8eeac2237027c49d91352c22e2afef1</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
-    <string name="caution">Неблагоприятные погодные условия</string>
+    <string name="caution">Ожидаются неблагоприятные погодные условия</string>
     <string name="cels">°C</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="city_id">692194</string>
@@ -689,11 +689,13 @@
     <string name="day">день</string>
     <string name="eve">вечер</string>
     <string name="exp_imp_settings">Экспорт/импорт настроек</string>
-    <string name="export_done">Настройки эскпортированы в папку:\n\"внутренняя_память/WeatherForecast/weatherforecastprefs.xml\"</string>
+    <string name="export_done">Настройки эскпортированы в файл:\n\"внутренняя_память/WeatherForecast/weatherforecastprefs.xml\"</string>
     <string name="export_settings">Экспорт настроек</string>
     <string name="from">от</string>
     <string name="history">История</string>
     <string name="hour">ч.</string>
+    <string name="humid_max">100</string>
+    <string name="humid_min">0</string>
     <string name="humidity">Влажность: </string>
     <string name="icon_url">http://openweathermap.org/img/w/</string>
     <string name="import_done">Настройки импортированы</string>
@@ -710,9 +712,13 @@
     <string name="night_mode_descr">Переключать тему на ночную?</string>
     <string name="no_connection">Отсутствует подключение к сети</string>
     <string name="no_sort_by_city">Без сортировки по городу</string>
+    <string name="press_max">1090</string>
+    <string name="press_min">850</string>
     <string name="pressure">Давление: </string>
     <string name="refresh_criteria">раз в</string>
     <string name="refresh_descr">Обновлять погоду</string>
+    <string name="refresh_max">24</string>
+    <string name="refresh_min">1</string>
     <string name="refresh_rate">Период обновления</string>
     <string name="search_menu_title">Search</string>
     <string name="select_city">Выберите город</string>
@@ -728,6 +734,8 @@
     <string name="sun_down">Закат:</string>
     <string name="sun_up">Восход:</string>
     <string name="temp">Температура: </string>
+    <string name="temp_max">70</string>
+    <string name="temp_min">-70</string>
     <string name="to">до</string>
     <string name="today">Сегодня</string>
     <string name="today_json">http://api.openweathermap.org/data/2.5/weather</string>
@@ -737,8 +745,11 @@
     <string name="warning">Вы не выбрали город!</string>
     <string name="warning_alerts">Необходимо выбрать не менее одного параметра для отслеживания</string>
     <string name="weather">Погода</string>
+    <string name="week">На этой неделе</string>
     <string name="week_json">http://api.openweathermap.org/data/2.5/forecast/daily</string>
     <string name="wind">Ветер:</string>
+    <string name="wind_max">33</string>
+    <string name="wind_min">0</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

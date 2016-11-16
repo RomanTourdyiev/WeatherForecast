@@ -138,7 +138,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 show_fragment(getResources().getString(R.string.weather), new WeatherFragment());
             }
         }
-
     }
 
     @Override

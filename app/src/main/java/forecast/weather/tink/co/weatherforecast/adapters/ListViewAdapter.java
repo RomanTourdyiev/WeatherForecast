@@ -178,10 +178,10 @@ public class ListViewAdapter extends BaseAdapter {
         long dv = Long.valueOf(resultp.get(Constants.DATE)) * 1000;
         Date df = new java.util.Date(dv);
         if (isHistory) {
-            date_string = new SimpleDateFormat("dd MMMM yyyy, cccc HH:mm:ss", Locale.getDefault()).format(df);
+            date_string = new SimpleDateFormat("dd MMM yyyy,\ncccc HH:mm:ss", Locale.getDefault()).format(df);
             date.setText(date_string);
         } else {
-            date_string = new SimpleDateFormat("dd MMMM, cccc", Locale.getDefault()).format(df);
+            date_string = new SimpleDateFormat("dd MMM,\ncccc", Locale.getDefault()).format(df);
             date.setText(date_string);
         }
 
