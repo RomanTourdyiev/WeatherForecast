@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/alerts"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/category_text_height"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/alert_descr" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <CheckBox
+            android:id="@+id/chkbox_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/temp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_cell"
+            android:text="@string/from" />
+
+        <TextView
+            android:id="@+id/temp_alert_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_cell"
+            android:layout_marginRight="@dimen/margin_cell"
+            android:text="@string/to" />
+
+        <TextView
+            android:id="@+id/temp_alert_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cels"
+            android:textSize="@dimen/preference_text_height" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="@dimen/spinner_progress_height"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/temp_min" />
+
+        <forecast.weather.tink.co.weatherforecast.views.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rangebar_temp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rangebar_height"
+            custom:barWeight="@dimen/bar_weight"
+            custom:connectingLineWeight="@dimen/connecting_line_weight"
+            custom:selectorSize="@dimen/selector_size"
+            custom:tickEnd="@integer/temp_max"
+            custom:tickInterval="@integer/temp_interval"
+            custom:tickStart="@integer/temp_min" />
+
+
+        <TextView
+            android:layout_width="@dimen/spinner_progress_height"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            android:text="@string/temp_max" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <CheckBox
+            android:id="@+id/chkbox_press"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pressure"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_cell"
+            android:text="@string/from" />
+
+        <TextView
+            android:id="@+id/press_alert_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_cell"
+            android:layout_marginRight="@dimen/margin_cell"
+            android:text="@string/to" />
+
+        <TextView
+            android:id="@+id/press_alert_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_cell"
+            android:text="@string/mm"
+            android:textSize="@dimen/preference_text_height" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/press_min" />
+
+        <forecast.weather.tink.co.weatherforecast.views.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rangebar_press"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rangebar_height"
+            custom:barWeight="@dimen/bar_weight"
+            custom:connectingLineWeight="@dimen/connecting_line_weight"
+            custom:selectorSize="@dimen/selector_size"
+            custom:tickEnd="@integer/press_max"
+            custom:tickInterval="@integer/press_interval"
+            custom:tickStart="@integer/press_min" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/press_max" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <CheckBox
+            android:id="@+id/chkbox_humid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/humidity"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_cell"
+            android:text="@string/from" />
+
+        <TextView
+            android:id="@+id/humid_alert_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_cell"
+            android:layout_marginRight="@dimen/margin_cell"
+            android:text="@string/to" />
+
+        <TextView
+            android:id="@+id/humid_alert_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textSize="@dimen/preference_text_height" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="@dimen/activity_vertical_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/humid_min" />
+
+        <forecast.weather.tink.co.weatherforecast.views.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rangebar_humid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rangebar_height"
+            custom:barWeight="@dimen/bar_weight"
+            custom:connectingLineWeight="@dimen/connecting_line_weight"
+            custom:selectorSize="@dimen/selector_size"
+            custom:tickEnd="@integer/humid_max"
+            custom:tickInterval="@integer/humid_interval"
+            custom:tickStart="@integer/humid_min" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/humid_max" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <CheckBox
+            android:id="@+id/chkbox_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wind"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_cell"
+            android:text="@string/from" />
+
+        <TextView
+            android:id="@+id/wind_alert_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_cell"
+            android:layout_marginRight="@dimen/margin_cell"
+            android:text="@string/to" />
+
+        <TextView
+            android:id="@+id/wind_alert_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_cell"
+            android:text="@string/ms"
+            android:textSize="@dimen/preference_text_height" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="@dimen/activity_vertical_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/wind_min" />
+
+        <forecast.weather.tink.co.weatherforecast.views.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rangebar_wind"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rangebar_height"
+            custom:barWeight="@dimen/bar_weight"
+            custom:connectingLineWeight="@dimen/connecting_line_weight"
+            custom:selectorSize="@dimen/selector_size"
+            custom:tickEnd="@integer/wind_max"
+            custom:tickInterval="@integer/wind_interval"
+            custom:tickStart="@integer/wind_min" />
+
+
+        <TextView
+            android:layout_width="@dimen/spinner_progress_height"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            android:text="@string/wind_max" />
+
+    </RelativeLayout>
+
+</LinearLayout>

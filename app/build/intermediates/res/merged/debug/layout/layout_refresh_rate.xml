@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/refresh_rate"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/category_text_height"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/refresh_descr"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_cell"
+            android:text="@string/refresh_criteria" />
+
+        <TextView
+            android:id="@+id/refresh_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="@dimen/preference_text_height" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_cell"
+            android:text="@string/hour" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="@dimen/spinner_progress_height"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/refresh_min" />
+
+        <forecast.weather.tink.co.weatherforecast.views.rangebar.RangeBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rangebar_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rangebar_height"
+            custom:rangeBar="false"
+            custom:barWeight="@dimen/bar_weight"
+            custom:connectingLineWeight="@dimen/connecting_line_weight"
+            custom:selectorSize="@dimen/selector_size"
+            custom:tickEnd="@integer/refresh_max"
+            custom:tickInterval="@integer/refresh_interval"
+            custom:tickStart="@integer/refresh_min" />
+
+
+        <TextView
+            android:layout_width="@dimen/spinner_progress_height"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            android:text="@string/refresh_max" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
