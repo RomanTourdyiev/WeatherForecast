@@ -3546,6 +3546,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int Animation_Design_BottomSheetDialog=0x7f090093;
         public static final int AppPreferenceFragmentCompatStyle=0x7f090094;
         public static final int AppPreferenceTheme=0x7f090095;
+        /** <item name="android:textColor">?android:textColorPrimary</item>
+<item name="android:itemBackground">?android:windowBackground</item>
+<item name="textColor">?android:textColorPrimary</item>
+<item name="itemBackground">?android:windowBackground</item>
+         */
         public static final int AppTheme=0x7f090096;
         public static final int AppTheme_AppBarOverlay=0x7f090097;
         public static final int AppTheme_NoActionBar=0x7f09003b;

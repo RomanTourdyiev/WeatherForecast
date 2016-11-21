@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_filter_list_white_24dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-xxxhdpi/ic_filter_list_white_24dp.png"
-    },
-    {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_weather_sunset_down_grey600_18dp.png",
         "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-xxxhdpi/ic_weather_sunset_down_grey600_18dp.png"
+    },
+    {
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_filter_list_white_24dp.png",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-xxxhdpi/ic_filter_list_white_24dp.png"
     },
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_weather_windy_black_24dp.png",
@@ -16,12 +16,12 @@
         "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-xxxhdpi/ic_today_black_24dp.png"
     },
     {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_weather_sunset_up_grey600_18dp.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-xxxhdpi/ic_weather_sunset_up_grey600_18dp.png"
-    },
-    {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_altimeter_black_24dp.png",
         "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-xxxhdpi/ic_altimeter_black_24dp.png"
+    },
+    {
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_weather_sunset_up_grey600_18dp.png",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/src/main/res/drawable-xxxhdpi/ic_weather_sunset_up_grey600_18dp.png"
     },
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-xxxhdpi/ic_history_black_24dp.png",

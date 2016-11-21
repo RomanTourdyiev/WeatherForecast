@@ -1,4 +1,0 @@
-#Mon Nov 21 08:56:08 EET 2016
-base.0=/Users/Cantador/Android/WeatherForecast/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
-renamed.0=classes.dex
-file.0=/Users/Cantador/Android/WeatherForecast/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
