@@ -81,6 +81,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public static boolean isShowingActivity = true;
 
+    public static final String APP_TAG = "WeatherForecast";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -103,7 +105,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this);
-        start_notification_service();
+
+
+        prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+
+        if (prefs.getString("refresh_range", "").length()!=0) {
+
+            Intent i = new Intent(this, NotificationService.class);
+            i.putExtra("refresh_range", prefs.getString("refresh_range", ""));
+            startService(i);
+
+        } else {
+
+            Intent i = new Intent(this, NotificationService.class);
+            i.putExtra("refresh_range", "1");
+            startService(i);
+
+        }
     }
 
     public void init_views() {
@@ -129,6 +147,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 show_fragment(getResources().getString(R.string.settings), new PreferencesFragment());
                 PreferencesFragment.snack_bar(getResources().getString(R.string.import_done));
             }
+
+        } else if (intent.hasExtra("notify_when")){
+
+            if (System.currentTimeMillis() - intent.getLongExtra("notify_when", 1L)>3600000L){
+                navigationView.setCheckedItem(R.id.nav_history);
+                show_fragment(getResources().getString(R.string.history), new HistoryFragment());
+            }else{
+                navigationView.setCheckedItem(R.id.nav_weather);
+                show_fragment(getResources().getString(R.string.weather), new WeatherFragment());
+            }
+
         } else {
             if (prefs.getString("city", "").length() == 0) {
                 navigationView.setCheckedItem(R.id.nav_settings);
@@ -261,14 +290,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         });
         alert = builder.create();
         alert.show();
-    }
-
-    public void start_notification_service() {
-        startService(new Intent(this, NotificationService.class));
-    }
-
-    public void stop_notification_service() {
-        stopService(new Intent(this, NotificationService.class));
     }
 
 }

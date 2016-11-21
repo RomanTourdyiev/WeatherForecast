@@ -16,6 +16,7 @@ import android.os.AsyncTask;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -26,9 +27,6 @@ import forecast.weather.tink.co.weatherforecast.services.NotificationService;
 
 
 public class NotificationPublisher extends BroadcastReceiver {
-
-    public static String NOTIFICATION_ID = "notification-id";
-    public static String NOTIFICATION = "notification";
 
     SharedPreferences prefs;
 
@@ -58,9 +56,7 @@ public class NotificationPublisher extends BroadcastReceiver {
 
     boolean chkbox_temp, chkbox_press, chkbox_humid, chkbox_wind;
 
-    int refresh_range = 1;//hours
-    int hour = 3600000;
-    int minute = 60000;
+    int refresh_range = 1;
 
     private static int id = 1;
     Context context;
@@ -70,14 +66,12 @@ public class NotificationPublisher extends BroadcastReceiver {
         init_prefs(context);
         this.context = context;
 
-//        NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-//
-//        Notification notification = intent.getParcelableExtra(NOTIFICATION);
-//        int id = intent.getIntExtra(NOTIFICATION_ID, 0);
-//        notificationManager.notify(id, notification);
-
         TodayNotifJSON todayNotifJson = new TodayNotifJSON();
         todayNotifJson.execute(city);
+
+        Intent i = new Intent(context, NotificationService.class);
+        i.putExtra("refresh_range", String.valueOf(refresh_range));
+        context.startService(i);
 
     }
 
@@ -104,13 +98,18 @@ public class NotificationPublisher extends BroadcastReceiver {
     }
 
     private void create_notification(Context context) {
+
+        WakeLocker.acquire(context);
+
         long when = System.currentTimeMillis();
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
         Intent notificationIntent = new Intent(context, MainActivity.class);
+        notificationIntent.putExtra("notify_when", when);
+        notificationIntent.setAction(String.valueOf(when));
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
-        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0,  notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
 
         NotificationCompat.Builder mNotifyBuilder = new NotificationCompat.Builder(
@@ -125,6 +124,8 @@ public class NotificationPublisher extends BroadcastReceiver {
                 .setDefaults(Notification.DEFAULT_ALL);
         notificationManager.notify(id, mNotifyBuilder.build());
         id++;
+
+        WakeLocker.release();
     }
 
     private class TodayNotifJSON extends AsyncTask<String, Void, Void> {

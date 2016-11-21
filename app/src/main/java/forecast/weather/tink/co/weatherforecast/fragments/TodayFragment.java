@@ -253,117 +253,119 @@ public class TodayFragment extends android.support.v4.app.Fragment implements Sw
 
         @Override
         protected void onPostExecute(Void args) {
-            swipeRefreshLayout.setRefreshing(false);
-            city.setText(city_string);
-            forecast.setText(weather_string);
+            if (isAdded()) {
+                swipeRefreshLayout.setRefreshing(false);
+                city.setText(city_string);
+                forecast.setText(weather_string);
 
-            long dv = date_long * 1000;
-            Date df = new java.util.Date(dv);
-            date_string = new SimpleDateFormat("dd MMMM yyyy, cccc", Locale.getDefault()).format(df);
-            date.setText(date_string);
+                long dv = date_long * 1000;
+                Date df = new java.util.Date(dv);
+                date_string = new SimpleDateFormat("dd MMMM yyyy, cccc", Locale.getDefault()).format(df);
+                date.setText(date_string);
 
-            if (Math.round(temp_double) > 0) {
-                temp.setText("+" + String.valueOf(Math.round(temp_double)));
-                temp.setTextColor(getResources().getColor(R.color.red));
-            } else if (Math.round(temp_double) < 0) {
-                temp.setText(String.valueOf(Math.round(temp_double)));
-                temp.setTextColor(getResources().getColor(R.color.blue));
-            } else if (Math.round(temp_double) == 0) {
-                temp.setText(String.valueOf(Math.round(temp_double)));
-            }
+                if (Math.round(temp_double) > 0) {
+                    temp.setText("+" + String.valueOf(Math.round(temp_double)));
+                    temp.setTextColor(getResources().getColor(R.color.red));
+                } else if (Math.round(temp_double) < 0) {
+                    temp.setText(String.valueOf(Math.round(temp_double)));
+                    temp.setTextColor(getResources().getColor(R.color.blue));
+                } else if (Math.round(temp_double) == 0) {
+                    temp.setText(String.valueOf(Math.round(temp_double)));
+                }
 
-            if (Math.round(temp_max_double) > 0) {
-                temp_max.setText("+" + String.valueOf(Math.round(temp_max_double)) + getResources().getString(R.string.cels));
-                temp_max.setTextColor(getResources().getColor(R.color.red));
-            } else if (Math.round(temp_max_double) < 0) {
-                temp_max.setText(String.valueOf(Math.round(temp_max_double)) + getResources().getString(R.string.cels));
-                temp_max.setTextColor(getResources().getColor(R.color.blue));
-            } else if (Math.round(temp_max_double) == 0) {
-                temp_max.setText(String.valueOf(Math.round(temp_double)) + getResources().getString(R.string.cels));
-            }
+                if (Math.round(temp_max_double) > 0) {
+                    temp_max.setText("+" + String.valueOf(Math.round(temp_max_double)) + getResources().getString(R.string.cels));
+                    temp_max.setTextColor(getResources().getColor(R.color.red));
+                } else if (Math.round(temp_max_double) < 0) {
+                    temp_max.setText(String.valueOf(Math.round(temp_max_double)) + getResources().getString(R.string.cels));
+                    temp_max.setTextColor(getResources().getColor(R.color.blue));
+                } else if (Math.round(temp_max_double) == 0) {
+                    temp_max.setText(String.valueOf(Math.round(temp_double)) + getResources().getString(R.string.cels));
+                }
 
-            if (Math.round(temp_min_double) > 0) {
-                temp_min.setText("+" + String.valueOf(Math.round(temp_min_double)) + getResources().getString(R.string.cels));
-                temp_min.setTextColor(getResources().getColor(R.color.red));
-            } else if (Math.round(temp_min_double) < 0) {
-                temp_min.setText(String.valueOf(Math.round(temp_min_double)) + getResources().getString(R.string.cels));
-                temp_min.setTextColor(getResources().getColor(R.color.blue));
-            } else if (Math.round(temp_min_double) == 0) {
-                temp_min.setText(String.valueOf(Math.round(temp_double)) + getResources().getString(R.string.cels));
-            }
+                if (Math.round(temp_min_double) > 0) {
+                    temp_min.setText("+" + String.valueOf(Math.round(temp_min_double)) + getResources().getString(R.string.cels));
+                    temp_min.setTextColor(getResources().getColor(R.color.red));
+                } else if (Math.round(temp_min_double) < 0) {
+                    temp_min.setText(String.valueOf(Math.round(temp_min_double)) + getResources().getString(R.string.cels));
+                    temp_min.setTextColor(getResources().getColor(R.color.blue));
+                } else if (Math.round(temp_min_double) == 0) {
+                    temp_min.setText(String.valueOf(Math.round(temp_double)) + getResources().getString(R.string.cels));
+                }
 
-            humidity.setText(getResources().getString(R.string.humidity) + " " + humidity_string + "%");
-            pressure.setText(getResources().getString(R.string.pressure) + " " + pressure_string + " " + getResources().getString(R.string.mm));
-            wind.setText(getResources().getString(R.string.wind) + " " + wind_string + " " + getResources().getString(R.string.ms));
+                humidity.setText(getResources().getString(R.string.humidity) + " " + humidity_string + "%");
+                pressure.setText(getResources().getString(R.string.pressure) + " " + pressure_string + " " + getResources().getString(R.string.mm));
+                wind.setText(getResources().getString(R.string.wind) + " " + wind_string + " " + getResources().getString(R.string.ms));
 
-            long srv = sunrise_long * 1000;
-            Date srf = new java.util.Date(srv);
-            sunrise_string = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(srf);
-            sunrise.setText(getResources().getString(R.string.sun_up) + " " + sunrise_string);
+                long srv = sunrise_long * 1000;
+                Date srf = new java.util.Date(srv);
+                sunrise_string = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(srf);
+                sunrise.setText(getResources().getString(R.string.sun_up) + " " + sunrise_string);
 
-            long ssv = sunset_long * 1000;
-            Date ssf = new java.util.Date(ssv);
-            sunset_string = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(ssf);
-            sunset.setText(getResources().getString(R.string.sun_down) + " " + sunset_string);
+                long ssv = sunset_long * 1000;
+                Date ssf = new java.util.Date(ssv);
+                sunset_string = new SimpleDateFormat("HH:mm", Locale.getDefault()).format(ssf);
+                sunset.setText(getResources().getString(R.string.sun_down) + " " + sunset_string);
 
-            imageLoader.DisplayImage(getResources().getString(R.string.icon_url) + icon_string + ".png", icon);
+                imageLoader.DisplayImage(getResources().getString(R.string.icon_url) + icon_string + ".png", icon);
 
-            if (chkbox_temp) {
-                if (temp_double <= Float.parseFloat(temp_alert_min) || temp_double >= Float.parseFloat(temp_alert_max)) {
-                    temp_blink.setVisibility(View.VISIBLE);
-                    temp_alert_descr.setVisibility(View.VISIBLE);
-                    ((MainActivity) getActivity()).blink(temp_blink);
-                    if (isSaved) {
-                        ((MainActivity) getActivity()).show_dialog(1);
+                if (chkbox_temp) {
+                    if (temp_double <= Float.parseFloat(temp_alert_min) || temp_double >= Float.parseFloat(temp_alert_max)) {
+                        temp_blink.setVisibility(View.VISIBLE);
+                        temp_alert_descr.setVisibility(View.VISIBLE);
+                        ((MainActivity) getActivity()).blink(temp_blink);
+                        if (isSaved) {
+                            ((MainActivity) getActivity()).show_dialog(1);
+                        }
+                    } else {
+                        temp_blink.setVisibility(View.GONE);
+                        temp_alert_descr.setVisibility(View.GONE);
                     }
-                } else {
-                    temp_blink.setVisibility(View.GONE);
-                    temp_alert_descr.setVisibility(View.GONE);
                 }
-            }
 
-            if (chkbox_press) {
-                if (Float.parseFloat(pressure_string) <= Float.parseFloat(press_alert_min) || Float.parseFloat(pressure_string) >= Float.parseFloat(press_alert_max)) {
-                    press_blink.setVisibility(View.VISIBLE);
-                    press_alert_descr.setVisibility(View.VISIBLE);
-                    ((MainActivity) getActivity()).blink(press_blink);
-                    if (isSaved) {
-                        ((MainActivity) getActivity()).show_dialog(2);
+                if (chkbox_press) {
+                    if (Float.parseFloat(pressure_string) <= Float.parseFloat(press_alert_min) || Float.parseFloat(pressure_string) >= Float.parseFloat(press_alert_max)) {
+                        press_blink.setVisibility(View.VISIBLE);
+                        press_alert_descr.setVisibility(View.VISIBLE);
+                        ((MainActivity) getActivity()).blink(press_blink);
+                        if (isSaved) {
+                            ((MainActivity) getActivity()).show_dialog(2);
+                        }
+                    } else {
+                        press_blink.setVisibility(View.GONE);
+                        press_alert_descr.setVisibility(View.GONE);
                     }
-                } else {
-                    press_blink.setVisibility(View.GONE);
-                    press_alert_descr.setVisibility(View.GONE);
                 }
-            }
 
-            if (chkbox_humid) {
-                if (Float.parseFloat(humidity_string) <= Float.parseFloat(humid_alert_min) || Float.parseFloat(humidity_string) >= Float.parseFloat(humid_alert_max)) {
-                    humid_blink.setVisibility(View.VISIBLE);
-                    humid_alert_descr.setVisibility(View.VISIBLE);
-                    ((MainActivity) getActivity()).blink(humid_blink);
-                    if (isSaved)
-                        ((MainActivity) getActivity()).show_dialog(3);
-                } else {
-                    humid_blink.setVisibility(View.GONE);
-                    humid_alert_descr.setVisibility(View.GONE);
-                }
-            }
-
-            if (chkbox_wind) {
-                if (Float.parseFloat(wind_string) <= Float.parseFloat(wind_alert_min) || Float.parseFloat(wind_string) >= Float.parseFloat(wind_alert_max)) {
-                    wind_blink.setVisibility(View.VISIBLE);
-                    wind_alert_descr.setVisibility(View.VISIBLE);
-                    ((MainActivity) getActivity()).blink(wind_blink);
-                    if (isSaved) {
-                        ((MainActivity) getActivity()).show_dialog(4);
+                if (chkbox_humid) {
+                    if (Float.parseFloat(humidity_string) <= Float.parseFloat(humid_alert_min) || Float.parseFloat(humidity_string) >= Float.parseFloat(humid_alert_max)) {
+                        humid_blink.setVisibility(View.VISIBLE);
+                        humid_alert_descr.setVisibility(View.VISIBLE);
+                        ((MainActivity) getActivity()).blink(humid_blink);
+                        if (isSaved)
+                            ((MainActivity) getActivity()).show_dialog(3);
+                    } else {
+                        humid_blink.setVisibility(View.GONE);
+                        humid_alert_descr.setVisibility(View.GONE);
                     }
-                } else {
-                    wind_blink.setVisibility(View.GONE);
-                    wind_alert_descr.setVisibility(View.GONE);
                 }
-            }
 
-            animate();
+                if (chkbox_wind) {
+                    if (Float.parseFloat(wind_string) <= Float.parseFloat(wind_alert_min) || Float.parseFloat(wind_string) >= Float.parseFloat(wind_alert_max)) {
+                        wind_blink.setVisibility(View.VISIBLE);
+                        wind_alert_descr.setVisibility(View.VISIBLE);
+                        ((MainActivity) getActivity()).blink(wind_blink);
+                        if (isSaved) {
+                            ((MainActivity) getActivity()).show_dialog(4);
+                        }
+                    } else {
+                        wind_blink.setVisibility(View.GONE);
+                        wind_alert_descr.setVisibility(View.GONE);
+                    }
+                }
+
+                animate();
+            }
         }
     }
 

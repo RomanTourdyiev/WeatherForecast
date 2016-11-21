@@ -11,6 +11,7 @@ import android.graphics.Path;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.provider.OpenableColumns;
@@ -22,6 +23,7 @@ import android.support.v7.preference.SwitchPreferenceCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -53,6 +55,7 @@ import java.util.Map;
 import forecast.weather.tink.co.weatherforecast.R;
 import forecast.weather.tink.co.weatherforecast.activities.MainActivity;
 import forecast.weather.tink.co.weatherforecast.helpers.PathUtils;
+import forecast.weather.tink.co.weatherforecast.services.NotificationService;
 import forecast.weather.tink.co.weatherforecast.views.rangebar.RangeBar;
 
 import static forecast.weather.tink.co.weatherforecast.helpers.PathUtils.getPath;
@@ -242,11 +245,31 @@ public class PreferencesFragment extends PreferenceFragmentCompat implements Sha
     }
 
     public void pref_refresh_range() {
+
+        rangebar_refresh.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+
+                    sharedPreferences.edit().putString("refresh_range", rangebar_refresh.getRightPinValue()).commit();
+                    getActivity().stopService(new Intent(getActivity(), NotificationService.class));
+
+                    Intent intent = new Intent(getActivity(), NotificationService.class);
+                    intent.putExtra("refresh_range", rangebar_refresh.getRightPinValue());
+                    getActivity().startService(intent);
+                    
+                }
+                return false;
+            }
+        });
+        
+        
         rangebar_refresh.setOnRangeBarChangeListener(new RangeBar.OnRangeBarChangeListener() {
             @Override
-            public void onRangeChangeListener(RangeBar rangeBar, int leftPinIndex, int rightPinIndex, String leftPinValue, String rightPinValue) {
+            public void onRangeChangeListener(RangeBar rangeBar, int leftPinIndex, int rightPinIndex, String leftPinValue, final String rightPinValue) {
+                
                 refresh_rate.setText(rightPinValue);
-                sharedPreferences.edit().putString("refresh_range", rightPinValue).commit();
+                
             }
         });
     }
@@ -388,53 +411,105 @@ public class PreferencesFragment extends PreferenceFragmentCompat implements Sha
     }
 
     public void pref_temp_alert_range() {
+
+        rangebar_temp.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+
+                    sharedPreferences.edit().putString("temp_alert_min", rangebar_temp.getLeftPinValue()).commit();
+                    sharedPreferences.edit().putString("temp_alert_max", rangebar_temp.getRightPinValue()).commit();
+
+                }
+                return false;
+            }
+        });
+        
         rangebar_temp.setOnRangeBarChangeListener(new RangeBar.OnRangeBarChangeListener() {
             @Override
             public void onRangeChangeListener(RangeBar rangeBar, int leftPinIndex, int rightPinIndex, String leftPinValue, String rightPinValue) {
+                
                 temp_alert_min.setText(leftPinValue);
                 temp_alert_max.setText(rightPinValue);
-
-                sharedPreferences.edit().putString("temp_alert_min", leftPinValue).commit();
-                sharedPreferences.edit().putString("temp_alert_max", rightPinValue).commit();
+                
             }
         });
     }
 
     public void pref_press_alert_range() {
+        
+        rangebar_press.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+
+                    sharedPreferences.edit().putString("press_alert_min", rangebar_press.getLeftPinValue()).commit();
+                    sharedPreferences.edit().putString("press_alert_max", rangebar_press.getRightPinValue()).commit();
+
+                }
+                return false;
+            }
+        });
+
         rangebar_press.setOnRangeBarChangeListener(new RangeBar.OnRangeBarChangeListener() {
             @Override
             public void onRangeChangeListener(RangeBar rangeBar, int leftPinIndex, int rightPinIndex, String leftPinValue, String rightPinValue) {
+
                 press_alert_min.setText(leftPinValue);
                 press_alert_max.setText(rightPinValue);
 
-                sharedPreferences.edit().putString("press_alert_min", leftPinValue).commit();
-                sharedPreferences.edit().putString("press_alert_max", rightPinValue).commit();
             }
         });
     }
 
     public void pref_humid_alert_range() {
+
+        rangebar_humid.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+
+                    sharedPreferences.edit().putString("humid_alert_min", rangebar_humid.getLeftPinValue()).commit();
+                    sharedPreferences.edit().putString("humid_alert_max", rangebar_humid.getRightPinValue()).commit();
+
+                }
+                return false;
+            }
+        });
+
         rangebar_humid.setOnRangeBarChangeListener(new RangeBar.OnRangeBarChangeListener() {
             @Override
             public void onRangeChangeListener(RangeBar rangeBar, int leftPinIndex, int rightPinIndex, String leftPinValue, String rightPinValue) {
+
                 humid_alert_min.setText(leftPinValue);
                 humid_alert_max.setText(rightPinValue);
 
-                sharedPreferences.edit().putString("humid_alert_min", leftPinValue).commit();
-                sharedPreferences.edit().putString("humid_alert_max", rightPinValue).commit();
             }
         });
     }
 
     public void pref_wind_alert_range() {
+
+        rangebar_wind.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+
+                    sharedPreferences.edit().putString("wind_alert_min", rangebar_wind.getLeftPinValue()).commit();
+                    sharedPreferences.edit().putString("wind_alert_max", rangebar_wind.getRightPinValue()).commit();
+
+                }
+                return false;
+            }
+        });
+
         rangebar_wind.setOnRangeBarChangeListener(new RangeBar.OnRangeBarChangeListener() {
             @Override
             public void onRangeChangeListener(RangeBar rangeBar, int leftPinIndex, int rightPinIndex, String leftPinValue, String rightPinValue) {
+
                 wind_alert_min.setText(leftPinValue);
                 wind_alert_max.setText(rightPinValue);
 
-                sharedPreferences.edit().putString("wind_alert_min", leftPinValue).commit();
-                sharedPreferences.edit().putString("wind_alert_max", rightPinValue).commit();
             }
         });
     }

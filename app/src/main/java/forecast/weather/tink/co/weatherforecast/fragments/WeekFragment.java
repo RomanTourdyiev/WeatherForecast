@@ -86,7 +86,7 @@ public class WeekFragment extends android.support.v4.app.Fragment implements Swi
         if (NetworkCheck.isNetworkAvailable(getActivity())) {
             no_connection.setVisibility(View.GONE);
             week_listView.setVisibility(View.VISIBLE);
-            if (prefs.getString("city", "").length()!=0) {
+            if (prefs.getString("city", "").length() != 0) {
                 new FetchWeekWeather().execute(prefs.getString("city", ""));
             }
         } else {
@@ -146,9 +146,12 @@ public class WeekFragment extends android.support.v4.app.Fragment implements Swi
 
         @Override
         protected void onPostExecute(Void args) {
-            adapter = new ListViewAdapter(getActivity(), arraylist, false);
-            week_listView.setAdapter(adapter);
-            swipeRefreshLayout.setRefreshing(false);
+
+            if (isAdded()) {
+                adapter = new ListViewAdapter(getActivity(), arraylist, false);
+                week_listView.setAdapter(adapter);
+                swipeRefreshLayout.setRefreshing(false);
+            }
 
         }
     }

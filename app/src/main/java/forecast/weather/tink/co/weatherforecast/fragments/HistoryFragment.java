@@ -1,9 +1,11 @@
 package forecast.weather.tink.co.weatherforecast.fragments;
 
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -41,11 +43,19 @@ public class HistoryFragment extends android.support.v4.app.Fragment implements 
 
     ArrayAdapter<String> spinnerAdapter;
 
+    ArrayAdapter selectionAdapter;
+
     DBHelper dbHelper;
+
+    String city;
+
+    int position = 0;
 
     public boolean sort_by_city = false;
     String spinner_selection = "all";
     int sort_selection = 0;
+
+    SharedPreferences prefs;
 
 
     public HistoryFragment() {
@@ -62,7 +72,9 @@ public class HistoryFragment extends android.support.v4.app.Fragment implements 
         new SpinnerEntries().execute();
 
         MainActivity.spinnerCity.setOnItemSelectedListener(this);
+
         setHasOptionsMenu(true);
+
         return rootView;
     }
 
@@ -72,6 +84,24 @@ public class HistoryFragment extends android.support.v4.app.Fragment implements 
 
         all_cities = Arrays.asList((getResources().getStringArray(R.array.cities)));
         all_ids = Arrays.asList((getResources().getStringArray(R.array.id_s)));
+    }
+
+    public void set_spinner_selection() {
+
+        prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        city = prefs.getString("city", "");
+
+        if (city.length() != 0) {
+            selectionAdapter = (ArrayAdapter) MainActivity.spinnerCity.getAdapter();
+
+            for (int i = 0; i < ids.size(); i++) {
+                if (ids.get(i).equals(city))
+                    position = i;
+            }
+
+            MainActivity.spinnerCity.setSelection(position);
+        }
+
     }
 
     @Override
@@ -142,27 +172,27 @@ public class HistoryFragment extends android.support.v4.app.Fragment implements 
 
             if ((params[1]).equals("all")) {
                 if ((Integer) params[0] == 0) {
-                    cursor = db.rawQuery("SELECT * FROM city_table ORDER BY date ASC", null);
+                    cursor = select_by_param("date");
                 } else if ((Integer) params[0] == 1) {
-                    cursor = db.rawQuery("SELECT * FROM city_table ORDER BY temp ASC", null);
+                    cursor = select_by_param("temp");
                 } else if ((Integer) params[0] == 2) {
-                    cursor = db.rawQuery("SELECT * FROM city_table ORDER BY humidity ASC", null);
+                    cursor = select_by_param("humidity");
                 } else if ((Integer) params[0] == 3) {
-                    cursor = db.rawQuery("SELECT * FROM city_table ORDER BY pressure ASC", null);
+                    cursor = select_by_param("pressure");
                 } else if ((Integer) params[0] == 4) {
-                    cursor = db.rawQuery("SELECT * FROM city_table ORDER BY wind ASC", null);
+                    cursor = select_by_param("wind");
                 }
             } else {
                 if ((Integer) params[0] == 0) {
-                    cursor = db.rawQuery("SELECT * FROM city_table WHERE city =" + params[1] + " ORDER BY date ASC", null);
+                    cursor = select_by_city(params[1], "date");
                 } else if ((Integer) params[0] == 1) {
-                    cursor = db.rawQuery("SELECT * FROM city_table WHERE city =" + params[1] + " ORDER BY temp ASC", null);
+                    cursor = select_by_city(params[1], "temp");
                 } else if ((Integer) params[0] == 2) {
-                    cursor = db.rawQuery("SELECT * FROM city_table WHERE city =" + params[1] + " ORDER BY humidity ASC", null);
+                    cursor = select_by_city(params[1], "humidity");
                 } else if ((Integer) params[0] == 3) {
-                    cursor = db.rawQuery("SELECT * FROM city_table WHERE city =" + params[1] + " ORDER BY pressure ASC", null);
+                    cursor = select_by_city(params[1], "pressure");
                 } else if ((Integer) params[0] == 4) {
-                    cursor = db.rawQuery("SELECT * FROM city_table WHERE city =" + params[1] + " ORDER BY wind ASC", null);
+                    cursor = select_by_city(params[1], "wind");
                 }
             }
             cursor.moveToFirst();
@@ -195,13 +225,16 @@ public class HistoryFragment extends android.support.v4.app.Fragment implements 
 
         @Override
         protected void onPostExecute(Void args) {
-            ListViewAdapter adapter = new ListViewAdapter(getActivity(), arraylist, true);
 
-            if (!adapter.isEmpty()) {
-                history_listView.setAdapter(adapter);
+            if (isAdded()) {
+                ListViewAdapter adapter = new ListViewAdapter(getActivity(), arraylist, true);
+
+                if (!adapter.isEmpty()) {
+                    history_listView.setAdapter(adapter);
+                }
+
+                progress.setVisibility(View.GONE);
             }
-
-            progress.setVisibility(View.GONE);
         }
     }
 
@@ -225,7 +258,7 @@ public class HistoryFragment extends android.support.v4.app.Fragment implements 
 
             cities = new ArrayList<>();
             ids = new ArrayList<>();
-            cursor = db.rawQuery("SELECT * FROM city_table ORDER BY city ASC", null);
+            cursor = db.rawQuery("SELECT * FROM city_table ORDER BY city DESC", null);
 
             cursor.moveToFirst();
             do {
@@ -247,21 +280,26 @@ public class HistoryFragment extends android.support.v4.app.Fragment implements 
         @Override
         protected void onPostExecute(Void args) {
 
-            if (ids.size() > 1) {
-                cities.add(0, getResources().getString(R.string.all_cities));
-                ids.add(0, "all");
+            if (isAdded()) {
+                if (ids.size() > 1) {
+                    cities.add(0, getResources().getString(R.string.all_cities));
+                    ids.add(0, "all");
+                }
+
+                spinnerAdapter = new ArrayAdapter<String>(getActivity(), R.layout.simple_spinner_item, cities);
+                spinnerAdapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
+
+                if (!spinnerAdapter.isEmpty()) {
+                    MainActivity.spinnerCity.setAdapter(spinnerAdapter);
+                    MainActivity.spinnerCity.setVisibility(View.VISIBLE);
+                }
+
+                MainActivity.progressSpinner.setVisibility(View.GONE);
+
+                set_spinner_selection();
             }
-
-            spinnerAdapter = new ArrayAdapter<String>(getActivity(), R.layout.simple_spinner_item, cities);
-            spinnerAdapter.setDropDownViewResource(R.layout.simple_spinner_dropdown_item);
-
-            if (!spinnerAdapter.isEmpty()) {
-                MainActivity.spinnerCity.setAdapter(spinnerAdapter);
-                MainActivity.spinnerCity.setVisibility(View.VISIBLE);
-            }
-
-            MainActivity.progressSpinner.setVisibility(View.GONE);
         }
+
     }
 
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -274,10 +312,22 @@ public class HistoryFragment extends android.support.v4.app.Fragment implements 
     }
 
     @Override
-    public void onPause(){
+    public void onPause() {
         super.onPause();
         MainActivity.progressSpinner.setVisibility(View.GONE);
         MainActivity.spinnerCity.setVisibility(View.GONE);
+    }
+
+    public Cursor select_by_city(Object city, String order) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM city_table WHERE city =" + city + " ORDER BY " + order + " DESC", null);
+        return cursor;
+    }
+
+    public Cursor select_by_param(String order) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM city_table ORDER BY " + order + " DESC", null);
+        return cursor;
     }
 
 }
