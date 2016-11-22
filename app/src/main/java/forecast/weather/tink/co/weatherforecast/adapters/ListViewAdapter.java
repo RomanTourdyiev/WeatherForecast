@@ -24,10 +24,6 @@ import forecast.weather.tink.co.weatherforecast.helpers.Animations;
 import forecast.weather.tink.co.weatherforecast.helpers.ImageLoader;
 import forecast.weather.tink.co.weatherforecast.items.Constants;
 
-
-/**
- * Created by Flash on 09.04.2015.
- */
 public class ListViewAdapter extends BaseAdapter {
 
     Context context;
@@ -90,16 +86,6 @@ public class ListViewAdapter extends BaseAdapter {
     public long getItemId(int position) {
         return 0;
     }
-
-//    @Override
-//    public int getViewTypeCount() {
-//        return getCount();
-//    }
-//
-//    @Override
-//    public int getItemViewType(int position) {
-//        return position;
-//    }
 
     public View getView(int position, View convertView, ViewGroup parent) {
 

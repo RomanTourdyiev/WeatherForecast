@@ -1,9 +1,5 @@
 package forecast.weather.tink.co.weatherforecast.items;
 
-/**
- * Created by Повелитель on 24.10.2016.
- */
-
 public class Constants {
     public static String DATE = "date";
     public static String TEMP_DAY = "temp_day";

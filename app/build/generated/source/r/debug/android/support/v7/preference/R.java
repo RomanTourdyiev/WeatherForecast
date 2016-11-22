@@ -459,17 +459,17 @@ public final class R {
 		public static final int abc_text_size_subtitle_material_toolbar = 0x7f080003;
 		public static final int abc_text_size_title_material = 0x7f080050;
 		public static final int abc_text_size_title_material_toolbar = 0x7f080004;
-		public static final int disabled_alpha_material_dark = 0x7f080073;
-		public static final int disabled_alpha_material_light = 0x7f080074;
-		public static final int highlight_alpha_material_colored = 0x7f080077;
-		public static final int highlight_alpha_material_dark = 0x7f080078;
-		public static final int highlight_alpha_material_light = 0x7f080079;
-		public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f08007a;
-		public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f08007b;
-		public static final int item_touch_helper_swipe_escape_velocity = 0x7f08007c;
-		public static final int notification_large_icon_height = 0x7f080080;
-		public static final int notification_large_icon_width = 0x7f080081;
-		public static final int notification_subtext_size = 0x7f080082;
+		public static final int disabled_alpha_material_dark = 0x7f080076;
+		public static final int disabled_alpha_material_light = 0x7f080077;
+		public static final int highlight_alpha_material_colored = 0x7f08007a;
+		public static final int highlight_alpha_material_dark = 0x7f08007b;
+		public static final int highlight_alpha_material_light = 0x7f08007c;
+		public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f08007d;
+		public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f08007e;
+		public static final int item_touch_helper_swipe_escape_velocity = 0x7f08007f;
+		public static final int notification_large_icon_height = 0x7f080083;
+		public static final int notification_large_icon_width = 0x7f080084;
+		public static final int notification_subtext_size = 0x7f080085;
 	}
 	public static final class drawable {
 		public static final int abc_ab_share_pack_mtrl_alpha = 0x7f020000;
@@ -548,7 +548,7 @@ public final class R {
 		public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f02004f;
 		public static final int abc_textfield_search_default_mtrl_alpha = 0x7f020050;
 		public static final int abc_textfield_search_material = 0x7f020051;
-		public static final int notification_template_icon_bg = 0x7f02006e;
+		public static final int notification_template_icon_bg = 0x7f020069;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f0e00b9;

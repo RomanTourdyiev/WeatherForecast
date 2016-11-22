@@ -19,23 +19,16 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Locale;
 
+import forecast.weather.tink.co.weatherforecast.R;
 import forecast.weather.tink.co.weatherforecast.activities.MainActivity;
-import forecast.weather.tink.co.weatherforecast.adapters.ListViewAdapter;
 import forecast.weather.tink.co.weatherforecast.helpers.Animations;
 import forecast.weather.tink.co.weatherforecast.helpers.DBHelper;
 import forecast.weather.tink.co.weatherforecast.helpers.ImageLoader;
 import forecast.weather.tink.co.weatherforecast.helpers.JSONfunctions;
-import forecast.weather.tink.co.weatherforecast.R;
 import forecast.weather.tink.co.weatherforecast.helpers.NetworkCheck;
-
-/**
- * Created by Повелитель on 22.10.2016.
- */
 
 public class TodayFragment extends android.support.v4.app.Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
@@ -119,8 +112,6 @@ public class TodayFragment extends android.support.v4.app.Fragment implements Sw
             }
         });
         imageLoader = new ImageLoader(getActivity());
-
-//        MainActivity.spinnerCity.setVisibility(View.GONE);
 
         return rootView;
     }

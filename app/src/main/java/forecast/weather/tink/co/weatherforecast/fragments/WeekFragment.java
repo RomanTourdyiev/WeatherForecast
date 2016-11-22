@@ -1,8 +1,6 @@
 package forecast.weather.tink.co.weatherforecast.fragments;
 
-import android.content.ContentValues;
 import android.content.SharedPreferences;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -22,15 +20,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import forecast.weather.tink.co.weatherforecast.R;
-import forecast.weather.tink.co.weatherforecast.activities.MainActivity;
 import forecast.weather.tink.co.weatherforecast.adapters.ListViewAdapter;
-import forecast.weather.tink.co.weatherforecast.helpers.DBHelper;
 import forecast.weather.tink.co.weatherforecast.helpers.JSONfunctions;
 import forecast.weather.tink.co.weatherforecast.helpers.NetworkCheck;
-
-/**
- * Created by Повелитель on 22.10.2016.
- */
 
 public class WeekFragment extends android.support.v4.app.Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
@@ -65,8 +57,6 @@ public class WeekFragment extends android.support.v4.app.Fragment implements Swi
                 fetch_data();
             }
         });
-
-//        MainActivity.spinnerCity.setVisibility(View.GONE);
 
         return rootView;
     }

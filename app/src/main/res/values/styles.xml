@@ -1,18 +1,12 @@
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.DayNight">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
         <item name="preferenceTheme">@style/AppPreferenceTheme</item>
         <item name="android:listSeparatorTextViewStyle">@style/ListSeparatorTextView</item>
-        <!--<item name="android:textColor">?android:textColorPrimary</item>-->
-        <!--<item name="android:itemBackground">?android:windowBackground</item>-->
-        <!--<item name="textColor">?android:textColorPrimary</item>-->
-        <!--<item name="itemBackground">?android:windowBackground</item>-->
     </style>
 
     <style name="AppTheme.NoActionBar">

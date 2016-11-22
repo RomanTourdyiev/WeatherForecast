@@ -1,14 +1,10 @@
 package forecast.weather.tink.co.weatherforecast.helpers;
 
 import android.content.Context;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Environment;
 
-/**
- * Created by Cantador on 05.10.2015.
- */
 public class DBHelper extends SQLiteOpenHelper {
 
     private static String DB_PATH = Environment.getExternalStorageDirectory() + "/WeatherForecast/";

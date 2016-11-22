@@ -5,10 +5,6 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.DecelerateInterpolator;
 
-/**
- * Created by Повелитель on 23.10.2016.
- */
-
 public class Animations {
 
     public static Animation fade_in() {

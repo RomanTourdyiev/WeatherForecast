@@ -29,7 +29,7 @@
             android:gravity="center_vertical"
             android:text="date"
             android:textColor="?android:attr/textColorPrimary"
-            android:textSize="18sp" />
+            android:textSize="@dimen/text_medium" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -49,18 +49,18 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="N°C"
-                    android:textSize="24sp" />
+                    android:textSize="@dimen/text_large" />
 
                 <TextView
                     android:id="@+id/temp_blink"
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
+                    android:layout_width="@dimen/activity_horizontal_margin_extra"
+                    android:layout_height="@dimen/activity_vertical_margin_extra"
                     android:layout_gravity="center_vertical"
                     android:background="@drawable/circle"
                     android:gravity="center"
                     android:text="!"
                     android:textColor="@color/white"
-                    android:textSize="14dp"
+                    android:textSize="@dimen/alert_text_size"
                     android:textStyle="bold"
                     android:visibility="gone" />
 
@@ -108,7 +108,7 @@
             android:gravity="center_vertical"
             android:text="forecast"
             android:textColor="?android:attr/textColorPrimary"
-            android:textSize="18sp" />
+            android:textSize="@dimen/text_medium" />
 
     </LinearLayout>
 
@@ -139,7 +139,7 @@
                     android:gravity="center"
                     android:text="@string/morning"
                     android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_medium" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -149,7 +149,7 @@
                     android:gravity="center"
                     android:text="@string/day"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_medium" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -159,7 +159,7 @@
                     android:gravity="center"
                     android:text="@string/eve"
                     android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_medium" />
 
                 <TextView
                     android:id="@+id/textView"
@@ -170,7 +170,7 @@
                     android:gravity="center"
                     android:text="@string/night"
                     android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:textSize="@dimen/text_medium" />
 
             </LinearLayout>
 
@@ -196,18 +196,18 @@
                         android:padding="@dimen/padding_cell"
                         android:text="N°C"
                         android:textColor="@color/white"
-                        android:textSize="18sp" />
+                        android:textSize="@dimen/text_medium" />
 
                     <TextView
                         android:id="@+id/temp_morn_blink"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
+                        android:layout_width="@dimen/activity_horizontal_margin_extra"
+                        android:layout_height="@dimen/activity_vertical_margin_extra"
                         android:layout_gravity="center_vertical"
                         android:background="@drawable/circle"
                         android:gravity="center"
                         android:text="!"
                         android:textColor="@color/white"
-                        android:textSize="14dp"
+                        android:textSize="@dimen/alert_text_size"
                         android:textStyle="bold"
                         android:visibility="gone" />
 
@@ -229,18 +229,18 @@
                         android:padding="@dimen/padding_cell"
                         android:text="N°C"
                         android:textColor="@color/black"
-                        android:textSize="18sp" />
+                        android:textSize="@dimen/text_medium" />
 
                     <TextView
                         android:id="@+id/temp_day_blink"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
+                        android:layout_width="@dimen/activity_horizontal_margin_extra"
+                        android:layout_height="@dimen/activity_vertical_margin_extra"
                         android:layout_gravity="center_vertical"
                         android:background="@drawable/circle"
                         android:gravity="center"
                         android:text="!"
                         android:textColor="@color/white"
-                        android:textSize="14dp"
+                        android:textSize="@dimen/alert_text_size"
                         android:textStyle="bold"
                         android:visibility="gone" />
 
@@ -262,18 +262,18 @@
                         android:padding="@dimen/padding_cell"
                         android:text="N°C"
                         android:textColor="@color/white"
-                        android:textSize="18sp" />
+                        android:textSize="@dimen/text_medium" />
 
                     <TextView
                         android:id="@+id/temp_eve_blink"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
+                        android:layout_width="@dimen/activity_horizontal_margin_extra"
+                        android:layout_height="@dimen/activity_vertical_margin_extra"
                         android:layout_gravity="center_vertical"
                         android:background="@drawable/circle"
                         android:gravity="center"
                         android:text="!"
                         android:textColor="@color/white"
-                        android:textSize="14dp"
+                        android:textSize="@dimen/alert_text_size"
                         android:textStyle="bold"
                         android:visibility="gone" />
 
@@ -295,18 +295,18 @@
                         android:padding="@dimen/padding_cell"
                         android:text="N°C"
                         android:textColor="@color/white"
-                        android:textSize="18sp" />
+                        android:textSize="@dimen/text_medium" />
 
                     <TextView
                         android:id="@+id/temp_night_blink"
-                        android:layout_width="18dp"
-                        android:layout_height="18dp"
+                        android:layout_width="@dimen/activity_horizontal_margin_extra"
+                        android:layout_height="@dimen/activity_vertical_margin_extra"
                         android:layout_gravity="center_vertical"
                         android:background="@drawable/circle"
                         android:gravity="center"
                         android:text="!"
                         android:textColor="@color/white"
-                        android:textSize="14dp"
+                        android:textSize="@dimen/alert_text_size"
                         android:textStyle="bold"
                         android:visibility="gone" />
 
@@ -322,7 +322,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:background="@drawable/paper"
-            android:padding="@dimen/margin_cell"
             android:text="@string/alert_dialog_message_temp"
             android:visibility="gone" />
 
@@ -359,7 +358,7 @@
                 android:gravity="center_vertical"
                 android:padding="@dimen/padding_cell"
                 android:textColor="?android:attr/textColorPrimary"
-                android:textSize="18sp" />
+                android:textSize="@dimen/text_medium" />
 
         </LinearLayout>
 
@@ -369,7 +368,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:background="@drawable/paper"
-            android:padding="@dimen/margin_cell"
             android:text="@string/alert_dialog_message_humid"
             android:visibility="gone" />
 
@@ -406,7 +404,7 @@
                 android:gravity="center_vertical"
                 android:padding="@dimen/padding_cell"
                 android:textColor="?android:attr/textColorPrimary"
-                android:textSize="18sp" />
+                android:textSize="@dimen/text_medium" />
 
         </LinearLayout>
 
@@ -416,7 +414,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:background="@drawable/paper"
-            android:padding="@dimen/margin_cell"
             android:text="@string/alert_dialog_message_press"
             android:visibility="gone" />
 
@@ -453,7 +450,7 @@
                 android:gravity="center_vertical"
                 android:padding="@dimen/padding_cell"
                 android:textColor="?android:attr/textColorPrimary"
-                android:textSize="18sp" />
+                android:textSize="@dimen/text_medium" />
 
         </LinearLayout>
 
@@ -463,7 +460,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:background="@drawable/paper"
-            android:padding="@dimen/margin_cell"
             android:text="@string/alert_dialog_message_wind"
             android:visibility="gone" />
 

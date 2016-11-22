@@ -1,19 +1,12 @@
 package forecast.weather.tink.co.weatherforecast.fragments;
 
-import android.content.ActivityNotFoundException;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Path;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
-import android.os.Handler;
 import android.preference.PreferenceManager;
-import android.provider.MediaStore;
 import android.provider.OpenableColumns;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
@@ -22,7 +15,6 @@ import android.support.v7.preference.PreferenceFragmentCompat;
 import android.support.v7.preference.SwitchPreferenceCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -31,25 +23,16 @@ import android.widget.AutoCompleteTextView;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.io.BufferedReader;
+import org.apache.commons.io.FilenameUtils;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.OutputStream;
-
-import org.apache.commons.io.FilenameUtils;
-
-import java.io.OutputStreamWriter;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.Map;
 
 import forecast.weather.tink.co.weatherforecast.R;
@@ -57,12 +40,6 @@ import forecast.weather.tink.co.weatherforecast.activities.MainActivity;
 import forecast.weather.tink.co.weatherforecast.helpers.PathUtils;
 import forecast.weather.tink.co.weatherforecast.services.NotificationService;
 import forecast.weather.tink.co.weatherforecast.views.rangebar.RangeBar;
-
-import static forecast.weather.tink.co.weatherforecast.helpers.PathUtils.getPath;
-
-/**
- * Created by Повелитель on 25.10.2016.
- */
 
 public class PreferencesFragment extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener {
 
@@ -257,19 +234,19 @@ public class PreferencesFragment extends PreferenceFragmentCompat implements Sha
                     Intent intent = new Intent(getActivity(), NotificationService.class);
                     intent.putExtra("refresh_range", rangebar_refresh.getRightPinValue());
                     getActivity().startService(intent);
-                    
+
                 }
                 return false;
             }
         });
-        
-        
+
+
         rangebar_refresh.setOnRangeBarChangeListener(new RangeBar.OnRangeBarChangeListener() {
             @Override
             public void onRangeChangeListener(RangeBar rangeBar, int leftPinIndex, int rightPinIndex, String leftPinValue, final String rightPinValue) {
-                
+
                 refresh_rate.setText(rightPinValue);
-                
+
             }
         });
     }
@@ -424,20 +401,20 @@ public class PreferencesFragment extends PreferenceFragmentCompat implements Sha
                 return false;
             }
         });
-        
+
         rangebar_temp.setOnRangeBarChangeListener(new RangeBar.OnRangeBarChangeListener() {
             @Override
             public void onRangeChangeListener(RangeBar rangeBar, int leftPinIndex, int rightPinIndex, String leftPinValue, String rightPinValue) {
-                
+
                 temp_alert_min.setText(leftPinValue);
                 temp_alert_max.setText(rightPinValue);
-                
+
             }
         });
     }
 
     public void pref_press_alert_range() {
-        
+
         rangebar_press.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
@@ -657,15 +634,6 @@ public class PreferencesFragment extends PreferenceFragmentCompat implements Sha
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, final String key) {
         Preference preference = findPreference(key);
-//        if (preference instanceof ListPreference) {
-//            ListPreference listPreference = (ListPreference) preference;
-//            int prefIndex = listPreference.findIndexOfValue(sharedPreferences.getString(key, ""));
-//            if (prefIndex >= 0) {
-//                preference.setSummary(listPreference.getEntries()[prefIndex]);
-//            }
-//        } else {
-//            preference.setSummary(sharedPreferences.getString(key, ""));
-//        }
 
         if (preference instanceof SwitchPreferenceCompat) {
             preference.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {

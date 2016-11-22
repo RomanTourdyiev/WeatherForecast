@@ -156,12 +156,12 @@
         "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_focused_holo.9.png",
-        "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
-    },
-    {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_list_focused_holo.9.png",
+        "source": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-mdpi-v4/abc_list_focused_holo.9.png"
     },
     {
         "merged": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/res/merged/debug/drawable-mdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",

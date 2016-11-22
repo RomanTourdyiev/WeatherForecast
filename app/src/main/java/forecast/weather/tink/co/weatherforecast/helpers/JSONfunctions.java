@@ -14,16 +14,14 @@ import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-/**
- * Created by Flash on 09.04.2015.
- */
 public class JSONfunctions {
+
     public static JSONObject getJSONfromURL(String url) {
+
         InputStream is = null;
         String result = "";
         JSONObject jArray = null;
 
-        // Download JSON data from URL
         try {
             HttpClient httpclient = new DefaultHttpClient();
             HttpPost httppost = new HttpPost(url);
@@ -35,7 +33,6 @@ public class JSONfunctions {
             Log.e("log_tag", "Error in http connection " + e.toString());
         }
 
-        // Convert response to string
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(is, "utf-8"), 8);
             StringBuilder sb = new StringBuilder();

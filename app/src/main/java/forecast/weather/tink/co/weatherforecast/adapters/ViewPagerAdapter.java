@@ -1,16 +1,11 @@
 package forecast.weather.tink.co.weatherforecast.adapters;
 
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import forecast.weather.tink.co.weatherforecast.fragments.TodayFragment;
 import forecast.weather.tink.co.weatherforecast.fragments.WeekFragment;
-
-/**
- * Created by Повелитель on 22.10.2016.
- */
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
     private final String[] TITLES = {"Сегодня", "Неделя"};

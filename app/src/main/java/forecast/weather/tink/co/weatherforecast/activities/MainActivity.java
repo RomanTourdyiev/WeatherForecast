@@ -6,16 +6,12 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
-import android.provider.MediaStore;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
@@ -28,26 +24,12 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
-import android.support.v7.preference.PreferenceFragmentCompat;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
-
-import com.flaviofaria.kenburnsview.KenBurnsView;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.Map;
 
 import forecast.weather.tink.co.weatherforecast.R;
 import forecast.weather.tink.co.weatherforecast.fragments.HistoryFragment;
@@ -55,8 +37,6 @@ import forecast.weather.tink.co.weatherforecast.fragments.PreferencesFragment;
 import forecast.weather.tink.co.weatherforecast.fragments.WeatherFragment;
 import forecast.weather.tink.co.weatherforecast.helpers.Animations;
 import forecast.weather.tink.co.weatherforecast.services.NotificationService;
-
-import static android.R.attr.path;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -184,11 +164,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        if (hasFocus) {
-            isShowingActivity = true;
-        } else {
-            isShowingActivity = false;
-        }
+        isShowingActivity = hasFocus;
 
     }
 

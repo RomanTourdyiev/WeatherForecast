@@ -9,24 +9,18 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-/**
- * Created by Flash on 09.04.2015.
- */
 public class MemoryCache {
     private static final String TAG = "MemoryCache";
 
-    // Last argument true for LRU ordering
     private Map<String, Bitmap> cache = Collections
             .synchronizedMap(new LinkedHashMap<String, Bitmap>(10, 1.5f, true));
 
-    // Current allocated size
     private long size = 0;
 
-    // Max memory in bytes
+
     private long limit = 1000000;
 
     public MemoryCache() {
-        // Use 25% of available heap size
         setLimit(Runtime.getRuntime().maxMemory() / 4);
     }
 
@@ -61,7 +55,7 @@ public class MemoryCache {
     private void checkSize() {
         Log.i(TAG, "cache size=" + size + " length=" + cache.size());
         if (size > limit) {
-            // Least recently accessed item will be the first one iterated
+
             Iterator<Entry<String, Bitmap>> iter = cache.entrySet().iterator();
             while (iter.hasNext()) {
                 Entry<String, Bitmap> entry = iter.next();

@@ -16,7 +16,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
-import android.widget.Spinner;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,16 +27,11 @@ import forecast.weather.tink.co.weatherforecast.activities.MainActivity;
 import forecast.weather.tink.co.weatherforecast.adapters.ListViewAdapter;
 import forecast.weather.tink.co.weatherforecast.helpers.DBHelper;
 
-/**
- * Created by Повелитель on 24.10.2016.
- */
-
 public class HistoryFragment extends android.support.v4.app.Fragment implements AdapterView.OnItemSelectedListener {
 
     ListView history_listView;
     ProgressBar progress;
 
-    ListViewAdapter adapter;
     ArrayList<HashMap<String, String>> arraylist;
     List<String> cities, all_cities, ids, all_ids;
 
@@ -51,7 +45,6 @@ public class HistoryFragment extends android.support.v4.app.Fragment implements 
 
     int position = 0;
 
-    public boolean sort_by_city = false;
     String spinner_selection = "all";
     int sort_selection = 0;
 

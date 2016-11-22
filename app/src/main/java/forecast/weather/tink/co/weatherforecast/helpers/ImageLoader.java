@@ -4,10 +4,6 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Handler;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
-import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 
 import java.io.File;
@@ -27,17 +23,13 @@ import java.util.concurrent.Executors;
 
 import forecast.weather.tink.co.weatherforecast.R;
 
-
-/**
- * Created by Flash on 09.04.2015.
- */
 public class ImageLoader {
+
     MemoryCache memoryCache = new MemoryCache();
     FileCache fileCache;
-    private Map<ImageView, String> imageViews = Collections
-            .synchronizedMap(new WeakHashMap<ImageView, String>());
+    private Map<ImageView, String> imageViews = Collections.synchronizedMap(new WeakHashMap<ImageView, String>());
     ExecutorService executorService;
-    // Handler to display images in UI thread
+
     Handler handler = new Handler();
 
     public ImageLoader(Context context) {
@@ -72,7 +64,6 @@ public class ImageLoader {
         if (b != null)
             return b;
 
-        // Download Images from the Internet
         try {
             Bitmap bitmap = null;
             URL imageUrl = new URL(url);
@@ -96,18 +87,17 @@ public class ImageLoader {
         }
     }
 
-    // Decodes image and scales it to reduce memory consumption
+
     private Bitmap decodeFile(File f) {
         try {
-            // Decode image size
+
             BitmapFactory.Options o = new BitmapFactory.Options();
             o.inJustDecodeBounds = true;
             FileInputStream stream1 = new FileInputStream(f);
             BitmapFactory.decodeStream(stream1, null, o);
             stream1.close();
 
-            // Find the correct scale value. It should be the power of 2.
-            // Recommended Size 512
+
             final int REQUIRED_SIZE = 512;
             int width_tmp = o.outWidth, height_tmp = o.outHeight;
             int scale = 1;
@@ -120,7 +110,6 @@ public class ImageLoader {
                 scale *= 2;
             }
 
-            // Decode with inSampleSize
             BitmapFactory.Options o2 = new BitmapFactory.Options();
             o2.inSampleSize = scale;
             FileInputStream stream2 = new FileInputStream(f);
@@ -134,7 +123,6 @@ public class ImageLoader {
         return null;
     }
 
-    // Task for the queue
     private class PhotoToLoad {
         public String url;
         public ImageView imageView;
@@ -171,12 +159,9 @@ public class ImageLoader {
 
     boolean imageViewReused(PhotoToLoad photoToLoad) {
         String tag = imageViews.get(photoToLoad.imageView);
-        if (tag == null || !tag.equals(photoToLoad.url))
-            return true;
-        return false;
+        return tag == null || !tag.equals(photoToLoad.url);
     }
 
-    // Used to display bitmap in the UI thread
     class BitmapDisplayer implements Runnable {
         Bitmap bitmap;
         PhotoToLoad photoToLoad;
