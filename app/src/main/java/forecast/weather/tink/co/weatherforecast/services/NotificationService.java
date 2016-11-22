@@ -12,6 +12,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
@@ -21,7 +22,10 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 import forecast.weather.tink.co.weatherforecast.R;
 import forecast.weather.tink.co.weatherforecast.activities.MainActivity;
@@ -37,7 +41,7 @@ import forecast.weather.tink.co.weatherforecast.helpers.NotificationPublisher;
 public class NotificationService extends Service {
 
     SharedPreferences prefs;
-    String refresh_range = "";
+    String refresh_range = "1";
 
     @Override
     public void onCreate() {
@@ -47,11 +51,11 @@ public class NotificationService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
 
-        if (intent != null) {
-            if (intent.hasExtra("refresh_range")) {
-                refresh_range = (String) intent.getExtras().get("refresh_range");
-                start_timer(refresh_range);
-            }
+        Bundle extras = intent.getExtras();
+
+        if (extras!=null){
+            refresh_range = intent.getStringExtra("refresh_range");
+            start_timer(refresh_range);
         }
 
         return START_STICKY;
@@ -75,10 +79,15 @@ public class NotificationService extends Service {
         am.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
 
 
-        prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-//        Toast.makeText(this, "Service" + "\n" + "refresh=" + prefs.getString("refresh_range", "") + "\n"
-//                + "hour=" + String.valueOf(hour_new) + "\n"
-//                + "millis=" + String.valueOf(calendar.getTimeInMillis()), Toast.LENGTH_LONG).show();
+
+
+        Date df = new java.util.Date(calendar.getTimeInMillis());
+            String date_string = new SimpleDateFormat("dd MMM yyyy, HH:mm:ss", Locale.getDefault()).format(df);
+
+
+        Toast.makeText(this, "Service" + "\n" + "refresh=" + refresh_range + "\n"
+                + "hour=" + String.valueOf(hour_new) + "\n"
+                + "millis=" + date_string, Toast.LENGTH_LONG).show();
 
 
     }
