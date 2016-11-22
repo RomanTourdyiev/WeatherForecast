@@ -3099,7 +3099,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int ic_weather_windy_black_24dp=0x7f020062;
         public static final int navigation_empty_icon=0x7f020063;
         public static final int notification_template_icon_bg=0x7f02006e;
-        public static final int paper=0x7f020064;
+        public static final int paper_ =0x7f020064;
         public static final int rotate=0x7f020065;
         public static final int roundrect=0x7f020066;
         public static final int side_nav_bar=0x7f020067;
