@@ -7,12 +7,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.IBinder;
 
-import forecast.weather.tink.co.weatherforecast.helpers.NotificationPublisher;
+import forecast.weather.tink.co.weatherforecast.receivers.NotificationPublisher;
 
 public class NotificationService extends Service {
 
-    String refresh_range = "1";
+    int refresh_range = 1;
     long hour = 3600000L;
+    long minute = 60000L;
 
     @Override
     public void onCreate() {
@@ -26,7 +27,7 @@ public class NotificationService extends Service {
             Bundle extras = intent.getExtras();
 
             if (extras != null) {
-                refresh_range = intent.getStringExtra("refresh_range");
+                refresh_range = intent.getIntExtra("refresh_range", 1);
                 start_timer(refresh_range);
             }
         }
@@ -39,14 +40,12 @@ public class NotificationService extends Service {
         return null;
     }
 
-    public void start_timer(String refresh_range) {
-
-        int range = Integer.parseInt(refresh_range);
+    public void start_timer(int refresh_range) {
 
         Intent intent = new Intent(this, NotificationPublisher.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager am = (AlarmManager) this.getSystemService(ALARM_SERVICE);
-        am.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + range*hour, pendingIntent);
+        am.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + refresh_range*hour, pendingIntent);
 
     }
 }

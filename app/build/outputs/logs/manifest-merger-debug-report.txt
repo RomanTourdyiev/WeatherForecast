@@ -88,10 +88,10 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:28:17-77
 	android:name
 		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:28:27-74
-receiver#forecast.weather.tink.co.weatherforecast.helpers.NotificationPublisher
-ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:32:9-67
+receiver#forecast.weather.tink.co.weatherforecast.receivers.NotificationPublisher
+ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:32:9-69
 	android:name
-		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:32:19-64
+		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:32:19-66
 service#forecast.weather.tink.co.weatherforecast.services.NotificationService
 ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:34:9-37:40
 	android:enabled

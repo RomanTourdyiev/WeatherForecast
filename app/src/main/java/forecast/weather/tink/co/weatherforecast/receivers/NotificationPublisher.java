@@ -1,4 +1,4 @@
-package forecast.weather.tink.co.weatherforecast.helpers;
+package forecast.weather.tink.co.weatherforecast.receivers;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -21,6 +21,10 @@ import org.json.JSONObject;
 
 import forecast.weather.tink.co.weatherforecast.R;
 import forecast.weather.tink.co.weatherforecast.activities.MainActivity;
+import forecast.weather.tink.co.weatherforecast.helpers.DBHelper;
+import forecast.weather.tink.co.weatherforecast.helpers.JSONfunctions;
+import forecast.weather.tink.co.weatherforecast.helpers.NetworkCheck;
+import forecast.weather.tink.co.weatherforecast.helpers.WakeLocker;
 import forecast.weather.tink.co.weatherforecast.services.NotificationService;
 
 
@@ -67,8 +71,10 @@ public class NotificationPublisher extends BroadcastReceiver {
         TodayNotifJSON todayNotifJson = new TodayNotifJSON();
         todayNotifJson.execute(city);
 
+        context.stopService(new Intent(context, NotificationService.class));
+
         Intent i = new Intent(context, NotificationService.class);
-        i.putExtra("refresh_range", String.valueOf(refresh_range));
+        i.putExtra("refresh_range", refresh_range);
         context.startService(i);
 
     }

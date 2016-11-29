@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="forecast.weather.tink.co.weatherforecast"
-    android:versionCode="2"
+    android:versionCode="3"
     android:versionName="1.0b" >
 
     <uses-sdk
@@ -35,7 +35,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name="forecast.weather.tink.co.weatherforecast.helpers.NotificationPublisher" />
+        <receiver android:name="forecast.weather.tink.co.weatherforecast.receivers.NotificationPublisher" />
 
         <service
             android:name="forecast.weather.tink.co.weatherforecast.services.NotificationService"

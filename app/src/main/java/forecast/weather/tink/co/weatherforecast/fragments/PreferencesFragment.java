@@ -232,7 +232,7 @@ public class PreferencesFragment extends PreferenceFragmentCompat implements Sha
                     getActivity().stopService(new Intent(getActivity(), NotificationService.class));
 
                     Intent intent = new Intent(getActivity(), NotificationService.class);
-                    intent.putExtra("refresh_range", rangebar_refresh.getRightPinValue());
+                    intent.putExtra("refresh_range", Integer.parseInt(rangebar_refresh.getRightPinValue()));
                     getActivity().startService(intent);
 
                 }

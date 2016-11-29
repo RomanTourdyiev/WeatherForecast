@@ -2,6 +2,7 @@ package forecast.weather.tink.co.weatherforecast.activities;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -89,16 +90,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
 
+        if (isServiceRunning(NotificationService.class)){
+            stopService(new Intent(this, NotificationService.class));
+        }
+
         if (prefs.getString("refresh_range", "").length()!=0) {
 
             Intent i = new Intent(this, NotificationService.class);
-            i.putExtra("refresh_range", prefs.getString("refresh_range", ""));
+            i.putExtra("refresh_range", Integer.parseInt(prefs.getString("refresh_range", "")));
             startService(i);
 
         } else {
 
             Intent i = new Intent(this, NotificationService.class);
-            i.putExtra("refresh_range", "1");
+            i.putExtra("refresh_range", 1);
             startService(i);
 
         }
@@ -266,6 +271,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         });
         alert = builder.create();
         alert.show();
+    }
+
+    private boolean isServiceRunning(Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }
