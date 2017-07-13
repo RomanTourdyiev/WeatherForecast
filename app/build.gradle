@@ -2,15 +2,16 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.3"
+    buildToolsVersion '25.0.0'
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "forecast.weather.tink.co.weatherforecast"
         minSdkVersion 16
         targetSdkVersion 24
-        versionCode 3
-        versionName '1.0b'
+        versionCode 5
+        versionName '1.0'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -18,7 +19,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     productFlavors {
+    }
+    dexOptions {
+        jumboMode = true
+        javaMaxHeapSize "2g"
     }
 }
 
@@ -35,4 +41,5 @@ dependencies {
     compile 'com.android.support:support-v4:24.0.0'
     compile files('libs/urlimageviewhelper-1.0.4.jar')
     compile 'commons-io:commons-io:+'
+    compile 'com.google.android.gms:play-services:10.0.0'
 }

@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Weather Forecast</string>
 
+    <string name="banner_id">ca-app-pub-1287332975741366/2008805933</string>
+
     <string name="today">Сегодня</string>
     <string name="week">На этой неделе</string>
     <string name="caution">Ожидаются неблагоприятные погодные условия</string>

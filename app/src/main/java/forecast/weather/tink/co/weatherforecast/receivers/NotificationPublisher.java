@@ -30,186 +30,186 @@ import forecast.weather.tink.co.weatherforecast.services.NotificationService;
 
 public class NotificationPublisher extends BroadcastReceiver {
 
-    SharedPreferences prefs;
+  SharedPreferences prefs;
 
-    JSONObject jsonobjecttoday;
+  JSONObject jsonobjecttoday;
 
-    DBHelper dbHelper;
+  DBHelper dbHelper;
 
-    String
-            city,
-            city_string,
-            weather_string,
-            humidity_string,
-            pressure_string,
-            wind_string,
-            icon_string,
-            temp_alert_min,
-            temp_alert_max,
-            press_alert_min,
-            press_alert_max,
-            humid_alert_min,
-            humid_alert_max,
-            wind_alert_min,
-            wind_alert_max;
+  String
+      city,
+      city_string,
+      weather_string,
+      humidity_string,
+      pressure_string,
+      wind_string,
+      icon_string,
+      temp_alert_min,
+      temp_alert_max,
+      press_alert_min,
+      press_alert_max,
+      humid_alert_min,
+      humid_alert_max,
+      wind_alert_min,
+      wind_alert_max;
 
-    long date_long, sunset_long, sunrise_long;
-    double temp_double, temp_max_double, temp_min_double;
+  long date_long, sunset_long, sunrise_long;
+  double temp_double, temp_max_double, temp_min_double;
 
-    boolean chkbox_temp, chkbox_press, chkbox_humid, chkbox_wind;
+  boolean chkbox_temp, chkbox_press, chkbox_humid, chkbox_wind;
 
-    int refresh_range = 1;
+  int refresh_range = 1;
 
-    private static int id = 1;
-    Context context;
+  private int id = 1;
+  Context context;
 
-    public void onReceive(Context context, Intent intent) {
+  public void onReceive(Context context, Intent intent) {
 
-        init_prefs(context);
-        this.context = context;
+    init_prefs(context);
+    this.context = context;
 
-        TodayNotifJSON todayNotifJson = new TodayNotifJSON();
-        todayNotifJson.execute(city);
+    TodayNotifJSON todayNotifJson = new TodayNotifJSON();
+    todayNotifJson.execute(city);
 
-        context.stopService(new Intent(context, NotificationService.class));
+    context.stopService(new Intent(context, NotificationService.class));
 
-        Intent i = new Intent(context, NotificationService.class);
-        i.putExtra("refresh_range", refresh_range);
-        context.startService(i);
+    Intent i = new Intent(context, NotificationService.class);
+    i.putExtra("refresh_range", refresh_range);
+    context.startService(i);
 
+  }
+
+  private void init_prefs(Context context) {
+    prefs = PreferenceManager.getDefaultSharedPreferences(context);
+
+    city = prefs.getString("city", "");
+
+    temp_alert_min = prefs.getString("temp_alert_min", String.valueOf(context.getResources().getInteger(R.integer.temp_min)));
+    temp_alert_max = prefs.getString("temp_alert_max", String.valueOf(context.getResources().getInteger(R.integer.temp_max)));
+    press_alert_min = prefs.getString("press_alert_min", String.valueOf(context.getResources().getInteger(R.integer.press_min)));
+    press_alert_max = prefs.getString("press_alert_max", String.valueOf(context.getResources().getInteger(R.integer.press_max)));
+    humid_alert_min = prefs.getString("humid_alert_min", String.valueOf(context.getResources().getInteger(R.integer.humid_min)));
+    humid_alert_max = prefs.getString("humid_alert_max", String.valueOf(context.getResources().getInteger(R.integer.humid_max)));
+    wind_alert_min = prefs.getString("wind_alert_min", String.valueOf(context.getResources().getInteger(R.integer.wind_min)));
+    wind_alert_max = prefs.getString("wind_alert_max", String.valueOf(context.getResources().getInteger(R.integer.wind_max)));
+
+    chkbox_temp = prefs.getBoolean("chkbox_temp", true);
+    chkbox_press = prefs.getBoolean("chkbox_press", true);
+    chkbox_humid = prefs.getBoolean("chkbox_humid", true);
+    chkbox_wind = prefs.getBoolean("chkbox_wind", true);
+
+    refresh_range = Integer.parseInt(prefs.getString("refresh_range", ""));
+  }
+
+  private void create_notification(Context context) {
+
+    WakeLocker.acquire(context);
+
+    long when = System.currentTimeMillis();
+    NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+
+    Intent notificationIntent = new Intent(context, MainActivity.class);
+    notificationIntent.putExtra("notify_when", when);
+    notificationIntent.setAction(String.valueOf(when));
+    notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+    PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+
+
+    NotificationCompat.Builder mNotifyBuilder = new NotificationCompat.Builder(
+        context)
+        .setAutoCancel(true)
+        .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_launcher))
+        .setSmallIcon(R.mipmap.ic_launcher)
+        .setContentTitle(context.getResources().getString(R.string.today))
+        .setContentText(context.getResources().getString(R.string.caution))
+        .setWhen(when)
+        .setContentIntent(pendingIntent)
+        .setDefaults(Notification.DEFAULT_ALL);
+    notificationManager.notify(id, mNotifyBuilder.build());
+    id++;
+
+    WakeLocker.release();
+  }
+
+  private class TodayNotifJSON extends AsyncTask<String, Void, Void> {
+
+    @Override
+    protected void onPreExecute() {
+      super.onPreExecute();
     }
 
-    private void init_prefs(Context context) {
-        prefs = PreferenceManager.getDefaultSharedPreferences(context);
+    @Override
+    protected Void doInBackground(String... params) {
 
-        city = prefs.getString("city", "");
+      dbHelper = new DBHelper(context);
+      jsonobjecttoday = JSONfunctions.getJSONfromURL(context.getResources().getString(R.string.today_json) +
+          "?id=" + params[0] +
+          "&units=" + context.getResources().getString(R.string.units) +
+          "&lang=" + context.getResources().getString(R.string.lang) +
+          "&appid=" + context.getResources().getString(R.string.appid));
 
-        temp_alert_min = prefs.getString("temp_alert_min", String.valueOf(context.getResources().getInteger(R.integer.temp_min)));
-        temp_alert_max = prefs.getString("temp_alert_max", String.valueOf(context.getResources().getInteger(R.integer.temp_max)));
-        press_alert_min = prefs.getString("press_alert_min", String.valueOf(context.getResources().getInteger(R.integer.press_min)));
-        press_alert_max = prefs.getString("press_alert_max", String.valueOf(context.getResources().getInteger(R.integer.press_max)));
-        humid_alert_min = prefs.getString("humid_alert_min", String.valueOf(context.getResources().getInteger(R.integer.humid_min)));
-        humid_alert_max = prefs.getString("humid_alert_max", String.valueOf(context.getResources().getInteger(R.integer.humid_max)));
-        wind_alert_min = prefs.getString("wind_alert_min", String.valueOf(context.getResources().getInteger(R.integer.wind_min)));
-        wind_alert_max = prefs.getString("wind_alert_max", String.valueOf(context.getResources().getInteger(R.integer.wind_max)));
+      if (jsonobjecttoday != null)
 
-        chkbox_temp = prefs.getBoolean("chkbox_temp", true);
-        chkbox_press = prefs.getBoolean("chkbox_press", true);
-        chkbox_humid = prefs.getBoolean("chkbox_humid", true);
-        chkbox_wind = prefs.getBoolean("chkbox_wind", true);
+        try {
+          city_string = jsonobjecttoday.getString("name") + ", " + jsonobjecttoday.getJSONObject("sys").getString("country");
+          weather_string = jsonobjecttoday.getJSONArray("weather").getJSONObject(0).getString("description");
+          date_long = jsonobjecttoday.getLong("dt");
+          temp_double = jsonobjecttoday.getJSONObject("main").getDouble("temp");
+          temp_max_double = jsonobjecttoday.getJSONObject("main").getDouble("temp_max");
+          temp_min_double = jsonobjecttoday.getJSONObject("main").getDouble("temp_min");
+          humidity_string = jsonobjecttoday.getJSONObject("main").getString("humidity");
+          pressure_string = jsonobjecttoday.getJSONObject("main").getString("pressure");
+          wind_string = jsonobjecttoday.getJSONObject("wind").getString("speed");
+          sunrise_long = jsonobjecttoday.getJSONObject("sys").getLong("sunrise");
+          sunset_long = jsonobjecttoday.getJSONObject("sys").getLong("sunset");
+          icon_string = jsonobjecttoday.getJSONArray("weather").getJSONObject(0).getString("icon");
 
-        refresh_range = Integer.parseInt(prefs.getString("refresh_range", ""));
-    }
+          ContentValues cv = new ContentValues();
+          SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-    private void create_notification(Context context) {
+          Cursor c = db.rawQuery("SELECT * FROM city_table WHERE date = " + String.valueOf(date_long), null);
+          if (c.getCount() <= 0) {
+            cv.put("date", date_long);
+            cv.put("city", params[0]);
+            cv.put("temp", temp_double);
+            cv.put("temp_min", temp_min_double);
+            cv.put("temp_max", temp_max_double);
+            cv.put("icon", icon_string);
+            cv.put("forecast", weather_string);
+            cv.put("humidity", humidity_string);
+            cv.put("pressure", pressure_string);
+            cv.put("wind", wind_string);
 
-        WakeLocker.acquire(context);
+            db.insert("city_table", null, cv);
+          }
+          c.close();
+          db.close();
 
-        long when = System.currentTimeMillis();
-        NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-
-        Intent notificationIntent = new Intent(context, MainActivity.class);
-        notificationIntent.putExtra("notify_when", when);
-        notificationIntent.setAction(String.valueOf(when));
-        notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-
-        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-
-
-        NotificationCompat.Builder mNotifyBuilder = new NotificationCompat.Builder(
-                context)
-                .setAutoCancel(true)
-                .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_launcher))
-                .setSmallIcon(R.mipmap.ic_launcher)
-                .setContentTitle(context.getResources().getString(R.string.today))
-                .setContentText(context.getResources().getString(R.string.caution))
-                .setWhen(when)
-                .setContentIntent(pendingIntent)
-                .setDefaults(Notification.DEFAULT_ALL);
-        notificationManager.notify(id, mNotifyBuilder.build());
-        id++;
-
-        WakeLocker.release();
-    }
-
-    private class TodayNotifJSON extends AsyncTask<String, Void, Void> {
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
+        } catch (JSONException e) {
+          Log.e("Error", e.getMessage());
+          e.printStackTrace();
         }
 
-        @Override
-        protected Void doInBackground(String... params) {
 
-            dbHelper = new DBHelper(context);
-            jsonobjecttoday = JSONfunctions.getJSONfromURL(context.getResources().getString(R.string.today_json) +
-                    "?id=" + params[0] +
-                    "&units=" + context.getResources().getString(R.string.units) +
-                    "&lang=" + context.getResources().getString(R.string.lang) +
-                    "&appid=" + context.getResources().getString(R.string.appid));
+      return null;
+    }
 
-            if (jsonobjecttoday != null)
+    @Override
+    protected void onPostExecute(Void args) {
 
-                try {
-                    city_string = jsonobjecttoday.getString("name") + ", " + jsonobjecttoday.getJSONObject("sys").getString("country");
-                    weather_string = jsonobjecttoday.getJSONArray("weather").getJSONObject(0).getString("description");
-                    date_long = jsonobjecttoday.getLong("dt");
-                    temp_double = jsonobjecttoday.getJSONObject("main").getDouble("temp");
-                    temp_max_double = jsonobjecttoday.getJSONObject("main").getDouble("temp_max");
-                    temp_min_double = jsonobjecttoday.getJSONObject("main").getDouble("temp_min");
-                    humidity_string = jsonobjecttoday.getJSONObject("main").getString("humidity");
-                    pressure_string = jsonobjecttoday.getJSONObject("main").getString("pressure");
-                    wind_string = jsonobjecttoday.getJSONObject("wind").getString("speed");
-                    sunrise_long = jsonobjecttoday.getJSONObject("sys").getLong("sunrise");
-                    sunset_long = jsonobjecttoday.getJSONObject("sys").getLong("sunset");
-                    icon_string = jsonobjecttoday.getJSONArray("weather").getJSONObject(0).getString("icon");
-
-                    ContentValues cv = new ContentValues();
-                    SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-                    Cursor c = db.rawQuery("SELECT * FROM city_table WHERE date = " + String.valueOf(date_long), null);
-                    if (c.getCount() <= 0) {
-                        cv.put("date", date_long);
-                        cv.put("city", params[0]);
-                        cv.put("temp", temp_double);
-                        cv.put("temp_min", temp_min_double);
-                        cv.put("temp_max", temp_max_double);
-                        cv.put("icon", icon_string);
-                        cv.put("forecast", weather_string);
-                        cv.put("humidity", humidity_string);
-                        cv.put("pressure", pressure_string);
-                        cv.put("wind", wind_string);
-
-                        db.insert("city_table", null, cv);
-                    }
-                    c.close();
-                    db.close();
-
-                } catch (JSONException e) {
-                    Log.e("Error", e.getMessage());
-                    e.printStackTrace();
-                }
-
-
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(Void args) {
-
-            if (NetworkCheck.isNetworkAvailable(context)) {
-                if (prefs.getString("city", "").length() != 0) {
-                    if (temp_double <= Float.parseFloat(temp_alert_min) || temp_double >= Float.parseFloat(temp_alert_max) ||
-                            Float.parseFloat(pressure_string) <= Float.parseFloat(press_alert_min) || Float.parseFloat(pressure_string) >= Float.parseFloat(press_alert_max) ||
-                            Float.parseFloat(humidity_string) <= Float.parseFloat(humid_alert_min) || Float.parseFloat(humidity_string) >= Float.parseFloat(humid_alert_max) ||
-                            Float.parseFloat(wind_string) <= Float.parseFloat(wind_alert_min) || Float.parseFloat(wind_string) >= Float.parseFloat(wind_alert_max)) {
-                        if (!MainActivity.isShowingActivity) {
-                            create_notification(context);
-                        }
-                    }
-                }
+      if (NetworkCheck.isNetworkAvailable(context)) {
+        if (prefs.getString("city", "").length() != 0) {
+          if (temp_double <= Float.parseFloat(temp_alert_min) || temp_double >= Float.parseFloat(temp_alert_max) ||
+              Float.parseFloat(pressure_string) <= Float.parseFloat(press_alert_min) || Float.parseFloat(pressure_string) >= Float.parseFloat(press_alert_max) ||
+              Float.parseFloat(humidity_string) <= Float.parseFloat(humid_alert_min) || Float.parseFloat(humidity_string) >= Float.parseFloat(humid_alert_max) ||
+              Float.parseFloat(wind_string) <= Float.parseFloat(wind_alert_min) || Float.parseFloat(wind_string) >= Float.parseFloat(wind_alert_max)) {
+            if (!((MainActivity) context).isShowingActivity()) {
+              create_notification(context);
             }
+          }
         }
+      }
     }
+  }
 }

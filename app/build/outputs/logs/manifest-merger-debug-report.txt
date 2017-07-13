@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:2:1-41:12
+ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:2:1-49:12
 	package
 		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:3:5-55
 		INJECTED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml
@@ -15,10 +15,31 @@ ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.
 		INJECTED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.0] /Users/Cantador/.android/build-cache/235490f88ce458ba4640fdc0bc5b6f102cc065ac/output/AndroidManifest.xml:19:5-66
+MERGED from [com.google.android.gms:play-services-analytics:10.0.0] /Users/Cantador/.android/build-cache/fdd0b3e3d55f3ddffde30b6a52d57e776370a51c/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:10.0.0] /Users/Cantador/.android/build-cache/eaa4b8727a3a33de370f290c0c8e8b3830db0b13/output/AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-crash:10.0.0] /Users/Cantador/.android/build-cache/ff31b3d07d0bdb90440791b9fdaa55a8b0c5fdae/output/AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-gcm:10.0.0] /Users/Cantador/.android/build-cache/5b61e1995734f364d1b2062e8619ca20cc9df29f/output/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:10.0.0] /Users/Cantador/.android/build-cache/d7e6bb360d5433767e99e0f2449bb37a8a062029/output/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.0] /Users/Cantador/.android/build-cache/86addc528c1b20dbf5cc9a4a444202e3ec446c6a/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.0] /Users/Cantador/.android/build-cache/388d0c75f50f219755d5f3a90fa3cccae7b577dc/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-maps:10.0.0] /Users/Cantador/.android/build-cache/89f3d01b7613e3b179324a923a8a57ad703d26fd/output/AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.0] /Users/Cantador/.android/build-cache/235490f88ce458ba4640fdc0bc5b6f102cc065ac/output/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-analytics:10.0.0] /Users/Cantador/.android/build-cache/fdd0b3e3d55f3ddffde30b6a52d57e776370a51c/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-nearby:10.0.0] /Users/Cantador/.android/build-cache/0f28a4cfc7fcb844cf10b7d743a492d41b2072a6/output/AndroidManifest.xml:4:5-78
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.0] /Users/Cantador/.android/build-cache/86addc528c1b20dbf5cc9a4a444202e3ec446c6a/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.0] /Users/Cantador/.android/build-cache/388d0c75f50f219755d5f3a90fa3cccae7b577dc/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-maps:10.0.0] /Users/Cantador/.android/build-cache/89f3d01b7613e3b179324a923a8a57ad703d26fd/output/AndroidManifest.xml:19:5-78
 	android:name
 		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -31,6 +52,9 @@ ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.
 		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:8:22-77
 uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:9:5-82
+MERGED from [com.google.android.gms:play-services-gcm:10.0.0] /Users/Cantador/.android/build-cache/5b61e1995734f364d1b2062e8619ca20cc9df29f/output/AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:10.0.0] /Users/Cantador/.android/build-cache/d7e6bb360d5433767e99e0f2449bb37a8a062029/output/AndroidManifest.xml:20:5-81
+MERGED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:22:5-81
 	android:name
 		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:9:22-79
 uses-permission#android.permission.VIBRATE
@@ -39,6 +63,11 @@ ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.
 		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:10:22-63
 uses-permission#android.permission.WAKE_LOCK
 ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:11:5-68
+MERGED from [com.google.android.gms:play-services-analytics:10.0.0] /Users/Cantador/.android/build-cache/fdd0b3e3d55f3ddffde30b6a52d57e776370a51c/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.0] /Users/Cantador/.android/build-cache/86addc528c1b20dbf5cc9a4a444202e3ec446c6a/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.0] /Users/Cantador/.android/build-cache/388d0c75f50f219755d5f3a90fa3cccae7b577dc/output/AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:11:22-65
 uses-permission#com.android.alarm.permission.SET_ALARM
@@ -46,18 +75,60 @@ ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.
 	android:name
 		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:12:22-75
 application
-ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:14:5-39:19
-MERGED from [com.android.support:preference-v7:24.0.0] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/preference-v7/24.0.0/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:support-v4:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/AndroidManifest.xml:22:5-20
+ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:14:5-47:19
+MERGED from [com.android.support:preference-v7:24.0.0] /Users/Cantador/.android/build-cache/cf405f8c25e4fe08b8387ebab9f7d6e880f4944a/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:24.2.1] /Users/Cantador/.android/build-cache/abe0595d63ea2a42ff349cdd0cb9d6de51ae815f/output/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services:10.0.0] /Users/Cantador/.android/build-cache/e10b8061f2e3b53e74c81a654081002927916ee0/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.0] /Users/Cantador/.android/build-cache/235490f88ce458ba4640fdc0bc5b6f102cc065ac/output/AndroidManifest.xml:23:5-27:19
+MERGED from [com.google.android.gms:play-services-analytics:10.0.0] /Users/Cantador/.android/build-cache/fdd0b3e3d55f3ddffde30b6a52d57e776370a51c/output/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-appinvite:10.0.0] /Users/Cantador/.android/build-cache/eaa4b8727a3a33de370f290c0c8e8b3830db0b13/output/AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.android.gms:play-services-auth:10.0.0] /Users/Cantador/.android/build-cache/0cf9132c6d86b410250433ed5e7e699e4955014a/output/AndroidManifest.xml:19:5-25:19
+MERGED from [com.google.android.gms:play-services-cast-framework:10.0.0] /Users/Cantador/.android/build-cache/a0fc155a31c157ac694d6ee9667959cf177454c6/output/AndroidManifest.xml:4:5-8:19
+MERGED from [com.google.android.gms:play-services-cast:10.0.0] /Users/Cantador/.android/build-cache/2f15ff59fa51beeef5da68b1d014dbbe22d4691a/output/AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:mediarouter-v7:24.0.0] /Users/Cantador/.android/build-cache/1efe0d2b897b4eb9ac0a88fc0351b764db491083/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:palette-v7:24.0.0] /Users/Cantador/.android/build-cache/575aa23bd6e06a08b6bdd7f0f01a4f725f781717/output/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/Cantador/.android/build-cache/e1efcc093e146891a40933b7187829d1f6e6ede0/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] /Users/Cantador/.android/build-cache/509fbe9988260f761f7d6db2cc08ccab034fc421/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] /Users/Cantador/.android/build-cache/ece3fecb647cda72246a7992d9d8f9241c7d9137/output/AndroidManifest.xml:23:5-20
+MERGED from [com.google.android.gms:play-services-clearcut:10.0.0] /Users/Cantador/.android/build-cache/1c393facfea33182483d79490440c3206e429e41/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-config:10.0.0] /Users/Cantador/.android/build-cache/53586acbfdb06f67b4ce3f92230da6b3095d134b/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-awareness:10.0.0] /Users/Cantador/.android/build-cache/41f020aafa055696a5a6a50319061c7b3f552888/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-crash:10.0.0] /Users/Cantador/.android/build-cache/ff31b3d07d0bdb90440791b9fdaa55a8b0c5fdae/output/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-auth:10.0.0] /Users/Cantador/.android/build-cache/788c28282f355fb4195efc03961c3dfc04484fd9/output/AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-messaging:10.0.0] /Users/Cantador/.android/build-cache/733d4d2900c724b5375e7d4d8995194fca5a1ba8/output/AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.android.gms:play-services-fitness:10.0.0] /Users/Cantador/.android/build-cache/d197033ea4d6b29ad706181150c2c50419212683/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-games:10.0.0] /Users/Cantador/.android/build-cache/a26ac30bc71b698827fd2b6c767270e509dbee21/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-drive:10.0.0] /Users/Cantador/.android/build-cache/d7f74e3779194763e8afdee724acd7a0653efd3b/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-gass:10.0.0] /Users/Cantador/.android/build-cache/21512b196034e64aa36aa708f4447f9f405fbe00/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-gcm:10.0.0] /Users/Cantador/.android/build-cache/5b61e1995734f364d1b2062e8619ca20cc9df29f/output/AndroidManifest.xml:23:5-19
+MERGED from [com.google.firebase:firebase-appindexing:10.0.0] /Users/Cantador/.android/build-cache/66b29a72604f9edbba1daffcc4d9168349306bcd/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-iid:10.0.0] /Users/Cantador/.android/build-cache/d7e6bb360d5433767e99e0f2449bb37a8a062029/output/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-location:10.0.0] /Users/Cantador/.android/build-cache/1b49fd8b2307d14b1f715aa371d252232642d345/output/AndroidManifest.xml:5:5-6:19
+MERGED from [com.google.android.gms:play-services-nearby:10.0.0] /Users/Cantador/.android/build-cache/0f28a4cfc7fcb844cf10b7d743a492d41b2072a6/output/AndroidManifest.xml:5:5-19
+MERGED from [com.google.android.gms:play-services-panorama:10.0.0] /Users/Cantador/.android/build-cache/20c17864d266eb6bb79fce96c25264b8d132b9ea/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-places:10.0.0] /Users/Cantador/.android/build-cache/b8bf2fb79711c980f40ace0b4da4bf1949686543/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-plus:10.0.0] /Users/Cantador/.android/build-cache/db43c6a6eb3871f9b3403ebccd3b14a547b6f246/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-safetynet:10.0.0] /Users/Cantador/.android/build-cache/1b76f4c04a2560913e82d8941da5e6dee7a3ea13/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:23:5-33:19
+MERGED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.0] /Users/Cantador/.android/build-cache/86addc528c1b20dbf5cc9a4a444202e3ec446c6a/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-common:10.0.0] /Users/Cantador/.android/build-cache/99390242f3a9d358b883a9069eafb6a890fba8ad/output/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.0.0] /Users/Cantador/.android/build-cache/f147f2c463f108b91bc425a1de5bf5383a142627/output/AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.0] /Users/Cantador/.android/build-cache/388d0c75f50f219755d5f3a90fa3cccae7b577dc/output/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-vision:10.0.0] /Users/Cantador/.android/build-cache/99ff2628792bd7be2feadd3f0cf6d5792cd6371f/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-identity:10.0.0] /Users/Cantador/.android/build-cache/22c1737926d742574bed8e192cc2726436d22b42/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.0.0] /Users/Cantador/.android/build-cache/89f3d01b7613e3b179324a923a8a57ad703d26fd/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-wearable:10.0.0] /Users/Cantador/.android/build-cache/7d4af8e84a17a09993501730c88bdfb480182d95/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:10.0.0] /Users/Cantador/.android/build-cache/49a36c9d1df79488531d61f4216158b7e31bff86/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.0] /Users/Cantador/.android/build-cache/8df09bdb61148b6a0195f215f88a272a421c2fff/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.0.0] /Users/Cantador/.android/build-cache/9866cbf0f607d99465015649a7afdd4df7f22f01/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:24.2.1] /Users/Cantador/.android/build-cache/038dc9fe2537362db761ab94322ce09dfe9cb84a/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] /Users/Cantador/.android/build-cache/a96af657f98359e6940ca50e3249a64acfad7956/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] /Users/Cantador/.android/build-cache/e762f9cdd373782fc8671e995b438806a7598e17/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] /Users/Cantador/.android/build-cache/c822df33362914142db49e844578f2bef32645f9/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] /Users/Cantador/.android/build-cache/f8dd843991c95c74c6a2a7211c56a48224e36d3b/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] /Users/Cantador/.android/build-cache/ee01e596eba8ce3947f333412b299ce189856504/output/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:17:9-41
 	android:allowBackup
@@ -100,25 +171,298 @@ ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.
 		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:37:13-37
 	android:name
 		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:35:13-57
+activity#com.google.android.gms.ads.AdActivity
+ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:39:9-42:64
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.0] /Users/Cantador/.android/build-cache/235490f88ce458ba4640fdc0bc5b6f102cc065ac/output/AndroidManifest.xml:25:9-232
+	android:configChanges
+		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:41:13-122
+	android:theme
+		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:42:13-61
+	android:name
+		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:40:13-65
+meta-data#com.google.android.gms.version
+ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:43:9-45:69
+MERGED from [com.google.android.gms:play-services-basement:10.0.0] /Users/Cantador/.android/build-cache/9866cbf0f607d99465015649a7afdd4df7f22f01/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:45:13-66
+	android:name
+		ADDED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:44:13-58
 uses-sdk
 INJECTED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:preference-v7:24.0.0] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/preference-v7/24.0.0/AndroidManifest.xml:7:5-43
-MERGED from [com.android.support:support-v4:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-utils:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-ui:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:recyclerview-v7:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-vector-drawable:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:animated-vector-drawable:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.1] /Users/Cantador/.android/build-cache/8ad27598b0693db22dffbd7d5d132c1ca878c639/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:preference-v7:24.0.0] /Users/Cantador/.android/build-cache/cf405f8c25e4fe08b8387ebab9f7d6e880f4944a/output/AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:design:24.2.1] /Users/Cantador/.android/build-cache/abe0595d63ea2a42ff349cdd0cb9d6de51ae815f/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:24.2.1] /Users/Cantador/.android/build-cache/15e75b877e30057e800d6fa31c714a5f18282eec/output/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services:10.0.0] /Users/Cantador/.android/build-cache/e10b8061f2e3b53e74c81a654081002927916ee0/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-ads:10.0.0] /Users/Cantador/.android/build-cache/07de273d02356b2580a8598884229b52be243c39/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:10.0.0] /Users/Cantador/.android/build-cache/235490f88ce458ba4640fdc0bc5b6f102cc065ac/output/AndroidManifest.xml:22:5-42
+MERGED from [com.google.android.gms:play-services-analytics:10.0.0] /Users/Cantador/.android/build-cache/fdd0b3e3d55f3ddffde30b6a52d57e776370a51c/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:10.0.0] /Users/Cantador/.android/build-cache/eaa4b8727a3a33de370f290c0c8e8b3830db0b13/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth:10.0.0] /Users/Cantador/.android/build-cache/0cf9132c6d86b410250433ed5e7e699e4955014a/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-auth-base:10.0.0] /Users/Cantador/.android/build-cache/fb57b77058f26afc51c01a8a803fde4087f91379/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-cast-framework:10.0.0] /Users/Cantador/.android/build-cache/a0fc155a31c157ac694d6ee9667959cf177454c6/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-cast:10.0.0] /Users/Cantador/.android/build-cache/2f15ff59fa51beeef5da68b1d014dbbe22d4691a/output/AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:mediarouter-v7:24.0.0] /Users/Cantador/.android/build-cache/1efe0d2b897b4eb9ac0a88fc0351b764db491083/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:palette-v7:24.0.0] /Users/Cantador/.android/build-cache/575aa23bd6e06a08b6bdd7f0f01a4f725f781717/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/Cantador/.android/build-cache/e1efcc093e146891a40933b7187829d1f6e6ede0/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] /Users/Cantador/.android/build-cache/509fbe9988260f761f7d6db2cc08ccab034fc421/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.1] /Users/Cantador/.android/build-cache/ece3fecb647cda72246a7992d9d8f9241c7d9137/output/AndroidManifest.xml:21:5-43
+MERGED from [com.google.android.gms:play-services-clearcut:10.0.0] /Users/Cantador/.android/build-cache/1c393facfea33182483d79490440c3206e429e41/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-config:10.0.0] /Users/Cantador/.android/build-cache/53586acbfdb06f67b4ce3f92230da6b3095d134b/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-awareness:10.0.0] /Users/Cantador/.android/build-cache/41f020aafa055696a5a6a50319061c7b3f552888/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-crash:10.0.0] /Users/Cantador/.android/build-cache/ff31b3d07d0bdb90440791b9fdaa55a8b0c5fdae/output/AndroidManifest.xml:20:5-42
+MERGED from [com.google.firebase:firebase-auth:10.0.0] /Users/Cantador/.android/build-cache/788c28282f355fb4195efc03961c3dfc04484fd9/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-database:10.0.0] /Users/Cantador/.android/build-cache/394de9ecc59f74201f9fe10fd72dd380889e9af0/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:10.0.0] /Users/Cantador/.android/build-cache/d73aa4dfc708cc2f74b0a464cffd3494b82e365b/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-messaging:10.0.0] /Users/Cantador/.android/build-cache/733d4d2900c724b5375e7d4d8995194fca5a1ba8/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-storage:10.0.0] /Users/Cantador/.android/build-cache/833904bd1a5e1e12c07480b04fc1ad53d79ba663/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage-common:10.0.0] /Users/Cantador/.android/build-cache/3f42b9b32d0648caf6a6ae0674e195eec46edae9/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-fitness:10.0.0] /Users/Cantador/.android/build-cache/d197033ea4d6b29ad706181150c2c50419212683/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-games:10.0.0] /Users/Cantador/.android/build-cache/a26ac30bc71b698827fd2b6c767270e509dbee21/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-drive:10.0.0] /Users/Cantador/.android/build-cache/d7f74e3779194763e8afdee724acd7a0653efd3b/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-gass:10.0.0] /Users/Cantador/.android/build-cache/21512b196034e64aa36aa708f4447f9f405fbe00/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-gcm:10.0.0] /Users/Cantador/.android/build-cache/5b61e1995734f364d1b2062e8619ca20cc9df29f/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-appindexing:10.0.0] /Users/Cantador/.android/build-cache/66b29a72604f9edbba1daffcc4d9168349306bcd/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-iid:10.0.0] /Users/Cantador/.android/build-cache/d7e6bb360d5433767e99e0f2449bb37a8a062029/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-instantapps:10.0.0] /Users/Cantador/.android/build-cache/1bce16140105c73187d2b44a64aab9cf93a05e2d/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-nearby:10.0.0] /Users/Cantador/.android/build-cache/0f28a4cfc7fcb844cf10b7d743a492d41b2072a6/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-panorama:10.0.0] /Users/Cantador/.android/build-cache/20c17864d266eb6bb79fce96c25264b8d132b9ea/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-places:10.0.0] /Users/Cantador/.android/build-cache/b8bf2fb79711c980f40ace0b4da4bf1949686543/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-plus:10.0.0] /Users/Cantador/.android/build-cache/db43c6a6eb3871f9b3403ebccd3b14a547b6f246/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:10.0.0] /Users/Cantador/.android/build-cache/1b76f4c04a2560913e82d8941da5e6dee7a3ea13/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager:10.0.0] /Users/Cantador/.android/build-cache/fe56e84b09321b30c922bdf35e1958eec483eff6/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.0] /Users/Cantador/.android/build-cache/86addc528c1b20dbf5cc9a4a444202e3ec446c6a/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:10.0.0] /Users/Cantador/.android/build-cache/99390242f3a9d358b883a9069eafb6a890fba8ad/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.0.0] /Users/Cantador/.android/build-cache/f147f2c463f108b91bc425a1de5bf5383a142627/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.0] /Users/Cantador/.android/build-cache/388d0c75f50f219755d5f3a90fa3cccae7b577dc/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-vision:10.0.0] /Users/Cantador/.android/build-cache/99ff2628792bd7be2feadd3f0cf6d5792cd6371f/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-wallet:10.0.0] /Users/Cantador/.android/build-cache/9dc31a465e52a6972566744fe42400ef8997bb6e/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-identity:10.0.0] /Users/Cantador/.android/build-cache/22c1737926d742574bed8e192cc2726436d22b42/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-maps:10.0.0] /Users/Cantador/.android/build-cache/89f3d01b7613e3b179324a923a8a57ad703d26fd/output/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-wearable:10.0.0] /Users/Cantador/.android/build-cache/7d4af8e84a17a09993501730c88bdfb480182d95/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.0] /Users/Cantador/.android/build-cache/49a36c9d1df79488531d61f4216158b7e31bff86/output/AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.0] /Users/Cantador/.android/build-cache/8df09bdb61148b6a0195f215f88a272a421c2fff/output/AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.0] /Users/Cantador/.android/build-cache/9866cbf0f607d99465015649a7afdd4df7f22f01/output/AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:support-v4:24.2.1] /Users/Cantador/.android/build-cache/038dc9fe2537362db761ab94322ce09dfe9cb84a/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.1] /Users/Cantador/.android/build-cache/a96af657f98359e6940ca50e3249a64acfad7956/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:24.2.1] /Users/Cantador/.android/build-cache/e762f9cdd373782fc8671e995b438806a7598e17/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:24.2.1] /Users/Cantador/.android/build-cache/c822df33362914142db49e844578f2bef32645f9/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:24.2.1] /Users/Cantador/.android/build-cache/f8dd843991c95c74c6a2a7211c56a48224e36d3b/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:24.2.1] /Users/Cantador/.android/build-cache/ee01e596eba8ce3947f333412b299ce189856504/output/AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:24.2.1] /Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:appcompat-v7:24.2.1] /Users/Cantador/.android/build-cache/e1efcc093e146891a40933b7187829d1f6e6ede0/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:10.0.0] /Users/Cantador/.android/build-cache/235490f88ce458ba4640fdc0bc5b6f102cc065ac/output/AndroidManifest.xml:26:9-131
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.0] /Users/Cantador/.android/build-cache/235490f88ce458ba4640fdc0bc5b6f102cc065ac/output/AndroidManifest.xml:26:92-129
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:10.0.0] /Users/Cantador/.android/build-cache/235490f88ce458ba4640fdc0bc5b6f102cc065ac/output/AndroidManifest.xml:26:19-91
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.0] /Users/Cantador/.android/build-cache/eaa4b8727a3a33de370f290c0c8e8b3830db0b13/output/AndroidManifest.xml:20:9-25:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.0] /Users/Cantador/.android/build-cache/eaa4b8727a3a33de370f290c0c8e8b3830db0b13/output/AndroidManifest.xml:20:51-74
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.0] /Users/Cantador/.android/build-cache/eaa4b8727a3a33de370f290c0c8e8b3830db0b13/output/AndroidManifest.xml:20:75-121
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.0] /Users/Cantador/.android/build-cache/eaa4b8727a3a33de370f290c0c8e8b3830db0b13/output/AndroidManifest.xml:20:19-50
+intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.0] /Users/Cantador/.android/build-cache/eaa4b8727a3a33de370f290c0c8e8b3830db0b13/output/AndroidManifest.xml:21:13-24:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.0] /Users/Cantador/.android/build-cache/eaa4b8727a3a33de370f290c0c8e8b3830db0b13/output/AndroidManifest.xml:22:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.0] /Users/Cantador/.android/build-cache/eaa4b8727a3a33de370f290c0c8e8b3830db0b13/output/AndroidManifest.xml:22:25-87
+category#android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.0] /Users/Cantador/.android/build-cache/eaa4b8727a3a33de370f290c0c8e8b3830db0b13/output/AndroidManifest.xml:23:17-75
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.0] /Users/Cantador/.android/build-cache/eaa4b8727a3a33de370f290c0c8e8b3830db0b13/output/AndroidManifest.xml:23:27-73
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:10.0.0] /Users/Cantador/.android/build-cache/0cf9132c6d86b410250433ed5e7e699e4955014a/output/AndroidManifest.xml:20:9-189
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:10.0.0] /Users/Cantador/.android/build-cache/0cf9132c6d86b410250433ed5e7e699e4955014a/output/AndroidManifest.xml:20:129-162
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.0.0] /Users/Cantador/.android/build-cache/0cf9132c6d86b410250433ed5e7e699e4955014a/output/AndroidManifest.xml:20:163-187
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:10.0.0] /Users/Cantador/.android/build-cache/0cf9132c6d86b410250433ed5e7e699e4955014a/output/AndroidManifest.xml:20:69-128
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.0.0] /Users/Cantador/.android/build-cache/0cf9132c6d86b410250433ed5e7e699e4955014a/output/AndroidManifest.xml:20:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:10.0.0] /Users/Cantador/.android/build-cache/0cf9132c6d86b410250433ed5e7e699e4955014a/output/AndroidManifest.xml:24:9-184
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:10.0.0] /Users/Cantador/.android/build-cache/0cf9132c6d86b410250433ed5e7e699e4955014a/output/AndroidManifest.xml:24:64-87
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:10.0.0] /Users/Cantador/.android/build-cache/0cf9132c6d86b410250433ed5e7e699e4955014a/output/AndroidManifest.xml:24:88-182
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:10.0.0] /Users/Cantador/.android/build-cache/0cf9132c6d86b410250433ed5e7e699e4955014a/output/AndroidManifest.xml:24:18-63
+receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
+ADDED from [com.google.android.gms:play-services-cast-framework:10.0.0] /Users/Cantador/.android/build-cache/a0fc155a31c157ac694d6ee9667959cf177454c6/output/AndroidManifest.xml:5:9-99
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.0.0] /Users/Cantador/.android/build-cache/a0fc155a31c157ac694d6ee9667959cf177454c6/output/AndroidManifest.xml:5:19-97
+service#com.google.android.gms.cast.framework.media.MediaNotificationService
+ADDED from [com.google.android.gms:play-services-cast-framework:10.0.0] /Users/Cantador/.android/build-cache/a0fc155a31c157ac694d6ee9667959cf177454c6/output/AndroidManifest.xml:6:9-103
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.0.0] /Users/Cantador/.android/build-cache/a0fc155a31c157ac694d6ee9667959cf177454c6/output/AndroidManifest.xml:6:18-101
+service#com.google.android.gms.cast.framework.ReconnectionService
+ADDED from [com.google.android.gms:play-services-cast-framework:10.0.0] /Users/Cantador/.android/build-cache/a0fc155a31c157ac694d6ee9667959cf177454c6/output/AndroidManifest.xml:7:9-92
+	android:name
+		ADDED from [com.google.android.gms:play-services-cast-framework:10.0.0] /Users/Cantador/.android/build-cache/a0fc155a31c157ac694d6ee9667959cf177454c6/output/AndroidManifest.xml:7:18-90
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:10.0.0] /Users/Cantador/.android/build-cache/733d4d2900c724b5375e7d4d8995194fca5a1ba8/output/AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:10.0.0] /Users/Cantador/.android/build-cache/733d4d2900c724b5375e7d4d8995194fca5a1ba8/output/AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:10.0.0] /Users/Cantador/.android/build-cache/733d4d2900c724b5375e7d4d8995194fca5a1ba8/output/AndroidManifest.xml:23:18-87
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:10.0.0] /Users/Cantador/.android/build-cache/733d4d2900c724b5375e7d4d8995194fca5a1ba8/output/AndroidManifest.xml:24:13-26:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:10.0.0] /Users/Cantador/.android/build-cache/733d4d2900c724b5375e7d4d8995194fca5a1ba8/output/AndroidManifest.xml:24:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:10.0.0] /Users/Cantador/.android/build-cache/733d4d2900c724b5375e7d4d8995194fca5a1ba8/output/AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:10.0.0] /Users/Cantador/.android/build-cache/733d4d2900c724b5375e7d4d8995194fca5a1ba8/output/AndroidManifest.xml:25:25-75
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/Cantador/Android/WeatherForecast/app/src/main/AndroidManifest.xml:2:1-49:12 reason: com.google.android.gms.location has a targetSdkVersion < 4
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:24:9-134
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:24:110-132
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:24:85-109
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:24:18-84
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:25:9-32:20
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:25:94-118
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:25:19-93
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:26:13-31:29
+data
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:27:17-71
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:27:23-69
+action#android.intent.action.VIEW
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:28:17-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:28:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:30:17-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:10.0.0] /Users/Cantador/.android/build-cache/2f6786894439e2c4d8d4b2ff2342e244c8a618f5/output/AndroidManifest.xml:30:27-75
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.0] /Users/Cantador/.android/build-cache/86addc528c1b20dbf5cc9a4a444202e3ec446c6a/output/AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:27:162-184
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.0] /Users/Cantador/.android/build-cache/86addc528c1b20dbf5cc9a4a444202e3ec446c6a/output/AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:10.0.0] /Users/Cantador/.android/build-cache/2b623614f672bd0e5d335c5b8c95f7de3ce951c7/output/AndroidManifest.xml:32:16-87
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:30:9-36:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:31:13-35:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:32:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:33:17-85
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:33:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:34:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:34:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:40:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:40:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:40:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:44:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:44:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:44:18-82
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:45:13-47:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:45:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:46:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:10.0.0] /Users/Cantador/.android/build-cache/f4edcc1116fa4a8238a09e4774c567150e8dc784/output/AndroidManifest.xml:46:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:10.0.0] /Users/Cantador/.android/build-cache/99390242f3a9d358b883a9069eafb6a890fba8ad/output/AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:10.0.0] /Users/Cantador/.android/build-cache/99390242f3a9d358b883a9069eafb6a890fba8ad/output/AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:10.0.0] /Users/Cantador/.android/build-cache/99390242f3a9d358b883a9069eafb6a890fba8ad/output/AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:10.0.0] /Users/Cantador/.android/build-cache/99390242f3a9d358b883a9069eafb6a890fba8ad/output/AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:10.0.0] /Users/Cantador/.android/build-cache/99390242f3a9d358b883a9069eafb6a890fba8ad/output/AndroidManifest.xml:6:79-143
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.0.0] /Users/Cantador/.android/build-cache/89f3d01b7613e3b179324a923a8a57ad703d26fd/output/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.0.0] /Users/Cantador/.android/build-cache/89f3d01b7613e3b179324a923a8a57ad703d26fd/output/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.0.0] /Users/Cantador/.android/build-cache/89f3d01b7613e3b179324a923a8a57ad703d26fd/output/AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.0.0] /Users/Cantador/.android/build-cache/49a36c9d1df79488531d61f4216158b7e31bff86/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.0.0] /Users/Cantador/.android/build-cache/49a36c9d1df79488531d61f4216158b7e31bff86/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.0.0] /Users/Cantador/.android/build-cache/49a36c9d1df79488531d61f4216158b7e31bff86/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.0.0] /Users/Cantador/.android/build-cache/49a36c9d1df79488531d61f4216158b7e31bff86/output/AndroidManifest.xml:19:19-85

@@ -11,7 +11,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "/Users/Cantador/Android/WeatherForecast/app/build/intermediates/exploded-aar/com.android.support.test/rules/0.5/res/values/values.xml",
+                    "file": "/Users/Cantador/.android/build-cache/3627ec5be6411b09c7bb252c2a6d30cceddb58f1/output/res/values/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
